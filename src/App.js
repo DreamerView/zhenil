@@ -17,8 +17,10 @@ function App() {
       </div>
     </div>
     <div className="header__search">
+      <input placeholder="Search over 30 million book titles" className="header__search_input" type="text" />
+
       <div className="header__search_menu">
-        <div className="header__search_menu_pic">
+        <div className="header__search_menu_pic" id="search_menu">
           <img loading="lazy" className="header__search_menu_img" src={process.env.PUBLIC_URL+"/img/menu.svg"} alt="icon" />
         </div>
         <span className="header__search_menu_text">Menu</span>
@@ -26,7 +28,7 @@ function App() {
           <img loading="lazy" className="header__search_menu_img" src={process.env.PUBLIC_URL+"/img/top.svg"} alt="icon" />
         </div>
       </div>
-      <input placeholder="Search over 30 million book titles" className="header__search_input" type="text" />
+      
       <button className="header__search_button">
         <img loading="lazy" src={process.env.PUBLIC_URL+"/img/search.svg"} alt="icon" />
       </button>
