@@ -119,6 +119,7 @@ input,button,input:focus,textarea,textarea:focus {
     background-color: transparent;
     border:0 none;
     outline:none;
+    border-radius:0;
 }
 
 b.b-color {
