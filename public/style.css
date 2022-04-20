@@ -22,7 +22,7 @@
         order:3;
     }
 }
-@media screen and (min-width:1025px) and (max-width:1899px) {
+@media screen and (min-width:1161px) and (max-width:1899px) {
     :root {
         --m-1: 20px 50px;
         --i-s: 0 30px;
@@ -41,7 +41,7 @@
         order:3;
     }
 }
-@media (min-width:601px) and (max-width:1024px) {
+@media (min-width:601px) and (max-width:1160px) {
     :root {
         --m-1: 20px 32px;
         --i-s: 0 30px;
