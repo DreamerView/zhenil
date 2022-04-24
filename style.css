@@ -255,13 +255,13 @@ input.header__search_input {
     padding:var(--i-s);
     height:50px;
     font-size:16px;
-    background-color: var(--border-color);
-    /* border:1px solid var(--input_back); */
+    /* background-color: var(--border-color); */
+    border:1px solid var(--border-color);
     border-radius: 14px;
     color:black;
 }
 input.header__search_input::placeholder {
-    color: var(--input_back_text);
+    color: var(--search-placeholder-color);
 }
 button.header__search_button {
     order:3;
@@ -371,6 +371,7 @@ button.main__block_menu_select_main_button {
     width: 124px;
     height: 42px;
     cursor: pointer;
+    color:black;
 }
 p.main__block_menu_select_main_p {
     font-size: 14px;
