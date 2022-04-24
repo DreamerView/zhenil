@@ -6,7 +6,7 @@
 @media screen and (min-width:1900px) {
     :root {
         --m-1: 30px 150px;
-        --i-s: 0 24px;
+        --i-s: 0 60px;
         --display: flex;
     }
     h1 {
@@ -46,8 +46,8 @@
 }
 @media screen and (min-width:1161px) and (max-width:1899px) {
     :root {
-        --m-1: 25px 50px;
-        --i-s: 0 24px;
+        --m-1: 30px 50px;
+        --i-s: 0 60px;
         --display: flex;
     }
     h1 {
@@ -87,8 +87,8 @@
 }
 @media (min-width:601px) and (max-width:1160px) {
     :root {
-        --m-1: 20px 32px;
-        --i-s: 0 24px;
+        --m-1: 30px 32px;
+        --i-s: 0 48px;
         --display: flex;
     }
     h1 {
@@ -136,8 +136,8 @@
 }
 @media (min-width:1px) and (max-width:600px) {
     :root {
-        --m-1: 25px 16px;
-        --i-s: 0 16px;
+        --m-1: 30px 16px;
+        --i-s: 0 48px;
         --display: flex;
     }
     h1 {
@@ -170,7 +170,7 @@
         width:50%;
     }
     div.header__search {
-        padding-top:20px;
+        padding-top:30px;
         width: 100%;
     }
 
@@ -296,6 +296,7 @@ input.header__search_input {
     border:1px solid var(--border-color);
     border-radius: 14px;
     color:black;
+    background: url(img/search.svg) no-repeat scroll 12px 12px;
 }
 input.header__search_input::placeholder {
     color: var(--search-placeholder-color);
