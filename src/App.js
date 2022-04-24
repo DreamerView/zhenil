@@ -24,14 +24,7 @@ function App() {
           <img loading="lazy" className="header__search_menu_img" src={process.env.PUBLIC_URL+"/img/menu.svg"} alt="icon" />
         </div>
         <span className="header__search_menu_text">Menu</span>
-        <div className="header__search_menu_pic" id="search_top">
-          <img loading="lazy" className="header__search_menu_img" src={process.env.PUBLIC_URL+"/img/top.svg"} alt="icon" />
-        </div>
       </div>
-      
-      <button className="header__search_button">
-        <img loading="lazy" src={process.env.PUBLIC_URL+"/img/search.svg"} alt="icon" />
-      </button>
     </div>
   </header>
   <main>
