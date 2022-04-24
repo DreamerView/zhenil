@@ -6,7 +6,7 @@
 @media screen and (min-width:1900px) {
     :root {
         --m-1: 30px 150px;
-        --i-s: 0 30px;
+        --i-s: 0 24px;
         --display: flex;
     }
     input.header__search_input {
@@ -35,7 +35,7 @@
 @media screen and (min-width:1161px) and (max-width:1899px) {
     :root {
         --m-1: 25px 50px;
-        --i-s: 0 30px;
+        --i-s: 0 24px;
         --display: flex;
     }
     input.header__search_input {
@@ -64,7 +64,7 @@
 @media (min-width:601px) and (max-width:1160px) {
     :root {
         --m-1: 20px 32px;
-        --i-s: 0 30px;
+        --i-s: 0 24px;
         --display: flex;
     }
     header {
@@ -112,7 +112,7 @@
         width: 100%;
     }
     input.header__search_input:focus {
-        border-radius: 14px 0 0 14px;
+        border-radius: 14px;
     }
     input.header__search_input:focus+div.header__search_menu {
         display: none;
@@ -155,6 +155,8 @@
     --green_back: #46B06B;
     --purple_back: #9956D9;
     --blue_back: #3872FD;
+    --input_back:#F4F4F5;
+    --input_back_text: #626266;
 }
 h1 {
     font-size:30px;
@@ -215,14 +217,14 @@ img.header__logo_img {
 
 div.header__search_menu_pic {
     position: relative;
-    width: 26px;
-    height: 26px;
+    width: 22px;
+    height: 22px;
 }
 
 img.header__search_menu_img {
     position: absolute;
     width:auto;
-    height:26px;
+    height:22px;
 }
 
 div.header__search {
@@ -234,29 +236,32 @@ div.header__search_menu {
     order:1;
     display: flex;
     align-items: center;
-    padding:0 17px;
+    padding:0 16px;
     height:50px;
     background-color: var(--background-color);
-    border-radius: 14px 0 0 14px;
+    border-radius: 14px;
     border:1px solid var(--border-color);
     cursor: pointer;
+    margin-right:16px;
 }
 span.header__search_menu_text {
     font-size:16px;
     font-weight: 600;
     color: var(--brand-color);
-    margin: 0 17px;
+    margin: 0 16px 0 16px;
 }
 input.header__search_input {
     order:2;
     padding:var(--i-s);
     height:50px;
     font-size:16px;
-    background-color: var(--background-color);
-    border:1px solid var(--border-color);
+    background-color: var(--border-color);
+    /* border:1px solid var(--input_back); */
+    border-radius: 14px;
+    color:black;
 }
 input.header__search_input::placeholder {
-    color: var(--search-placeholder-color);
+    color: var(--input_back_text);
 }
 button.header__search_button {
     order:3;
