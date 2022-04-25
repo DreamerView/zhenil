@@ -19,7 +19,7 @@ const SizeAcc = () => {
 
                     <div className="main__block_interface_menu_c flex">
                         <label className="main__block_i_l">
-                            <input type="radio" name="choice" id="bookChoice" checked="checked" />
+                            <input type="radio" name="choice" id="bookChoice" />
                             <div className="main__block_interface_menu_c_book choice_land">
                                 <div className="main__block_interface_menu_c_book_block"></div>
                                 <span>Книжная</span>
@@ -38,12 +38,12 @@ const SizeAcc = () => {
 
                     <div className="main__block_interface_menu_c">
                         <div className="main__block_interface_menu_c_s flex">
-                            <span className="main__block_interface_menu_c_s_t">Ширина</span>
                             <input className="main__block_interface_menu_c_s_i" placeholder="Введите ширину" type="text" name="" id="" />
+                            <span className="main__block_interface_menu_c_s_t">Ширина</span>
                         </div>
                         <div className="main__block_interface_menu_c_s flex">
-                            <span className="main__block_interface_menu_c_s_t">Высота</span>
                             <input className="main__block_interface_menu_c_s_i" placeholder="Введите высоту" type="text" name="" id="" />
+                            <span className="main__block_interface_menu_c_s_t">Высота</span>
                         </div>
 
                     </div>
