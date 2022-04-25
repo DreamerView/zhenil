@@ -44,14 +44,16 @@ const SizeAcc = () => {
                             <option value="dm">Дециметры (дм)</option>
                             <option value="pix">Пискель (pix)</option>
                         </select>
-                        <div className="main__block_interface_menu_c_s flex">
-                            <input disabled={select} className={select?"main__block_interface_menu_c_s_i disabled":"main__block_interface_menu_c_s_i"} placeholder="Введите ширину" type="text" name="" id="" />
-                            <span className="main__block_interface_menu_c_s_t">Ширина</span>
-                        </div>
-                        <div className="main__block_interface_menu_c_s flex">
-                            <input disabled={select} className={select?"main__block_interface_menu_c_s_i disabled":"main__block_interface_menu_c_s_i"} placeholder="Введите высоту" type="text" name="" id="" />
-                            <span className="main__block_interface_menu_c_s_t">Высота</span>
-                        </div>
+                        {!select?<>
+                            <div className="main__block_interface_menu_c_s flex">
+                                <input disabled={select} className="main__block_interface_menu_c_s_i" placeholder="Введите ширину" type="text" name="" id="" />
+                                <span className="main__block_interface_menu_c_s_t">Ширина</span>
+                            </div>
+                            <div className="main__block_interface_menu_c_s flex">
+                                <input disabled={select} className="main__block_interface_menu_c_s_i" placeholder="Введите высоту" type="text" name="" id="" />
+                                <span className="main__block_interface_menu_c_s_t">Высота</span>
+                            </div>
+                        </>:''}
 
                     </div>
                     
