@@ -11,11 +11,11 @@ const SizeAcc = () => {
                 <span><b className="b-color">Home /</b> Books</span>
             </div>
             <div className="main__block">
-                <h1>[Этап 2/4] Конструктор бейджиков/аккредитации</h1>
+                <h3>[Этап 2/4] Конструктор бейджиков/аккредитации</h3>
                 <p className="sub_content">Этап 2/4. Выберите ориентацию и размер вашей бумаги</p>
                 <div className="main__block_interface_menu c-m">
                     <div className="main__block_interface_menu_c">
-                        <h1>Выбор ориентации бумаги</h1>
+                        <h3>Выбор ориентации бумаги</h3>
                     </div>
 
                     <div className="main__block_interface_menu_c flex">

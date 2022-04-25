@@ -7,7 +7,7 @@ const Acc = () => {
             <span><b className="b-color">Home /</b> Books</span>
         </div>
         <div className="main__block">
-            <h1>Конструктор бейджиков/аккредитации</h1>
+            <h3>Конструктор бейджиков/аккредитации</h3>
             <p className="sub_content">Выберите на сколько людей нужно это сделать?</p>
             <div className="main__block_menu_select p-m">
             <div className="main__block_menu_select_block green_back">

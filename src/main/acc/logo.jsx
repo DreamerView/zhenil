@@ -14,11 +14,11 @@ const LogoAcc = () => {
                 <span><b className="b-color">Home /</b> Books</span>
             </div>
             <div className="main__block">
-                <h1>[Этап 1/4] Конструктор бейджиков/аккредитации</h1>
+                <h3>[Этап 1/4] Конструктор бейджиков/аккредитации</h3>
                 <p className="sub_content">Этап 1/4. Загрузите ваш логотип организации/компаний</p>
                 <div className="main__block_interface_menu c-m">
                     <div className="main__block_interface_menu_c">
-                        <h1>Загрузка логотипа</h1>
+                        <h3>Загрузка логотипа</h3>
                     </div>
                     <div className="main__block_interface_menu_c">
                         <label htmlFor="logoPreview">
