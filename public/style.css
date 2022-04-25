@@ -108,7 +108,7 @@
         padding:30px 26px 0 26px;
     }
     div.main__block_interface_menu {
-        width: 1100px;
+        width: 1075px;
         padding: 40px 0;
     }
     button.main__block_interface_btn_forward {
@@ -297,12 +297,15 @@ input,button,input:focus,textarea,textarea:focus,select {
     border:0 none;
     outline:none;
     border-radius:0;
+    -moz-appearance: none; 
+	-webkit-appearance: none; 
+	appearance: none;
 }
 
 a {
     text-decoration: none;
     display: block;
-    color:black;
+    color:var(--font-color);
 }
 
 b.b-color {
@@ -379,7 +382,7 @@ input.header__search_input {
     font-size:16px;
     border:1px solid var(--border-color);
     border-radius: 14px;
-    color:black;
+    color:var(--font-color);
     background-color: #F2F2F7;
     background: url(img/search.svg) no-repeat scroll 12px 12px;
 }
@@ -494,7 +497,7 @@ button.main__block_menu_select_main_button {
     width: 124px;
     height: 42px;
     cursor: pointer;
-    color:black;
+    color:var(--font-color);
 }
 p.main__block_menu_select_main_p {
     font-size: 14px;
@@ -526,7 +529,7 @@ img.main__block_interface_menu_logo_icon_img {
     height:46px;
     margin:44px 44px;
     cursor: pointer;
-    filter: drop-shadow(5px 5px 20px black);
+    filter: drop-shadow(5px 5px 20px var(--font-color));
 }
 button.main__block_interface_btn_back {
     width: 172px;
@@ -653,4 +656,10 @@ select.main__block_interface_menu_c_select {
     border-radius: 22.5px;
     border:1px solid var(--border-color);
     margin-bottom: 16px;
+    text-align:-moz-center;
+    text-align:-webkit-center;
+    font-size:16px;
+    color:var(--font-color);
+    background: url(img/top.svg) no-repeat 95% 50%;
+    cursor: pointer;
 }
