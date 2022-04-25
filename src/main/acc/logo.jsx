@@ -14,7 +14,7 @@ const Logo = () => {
                 <span><b className="b-color">Home /</b> Books</span>
             </div>
             <div className="main__block">
-                <h1>Конструктор бейджиков/аккредитации</h1>
+                <h1>[Этап 1/4]Конструктор бейджиков/аккредитации</h1>
                 <p className="sub_content">Этап 1/4. Загрузите ваш логотип организации/компаний</p>
                 <div className="main__block_interface_menu">
                     <div className="main__block_interface_menu_c">
