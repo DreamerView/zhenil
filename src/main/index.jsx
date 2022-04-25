@@ -1,6 +1,7 @@
 import { Routes,Route } from "react-router-dom";
 import Acc from "./acc";
-import Logo from "./acc/logo";
+import LogoAcc from "./acc/logo";
+import SizeAcc from "./acc/size";
 
 
 const Main = () => {
@@ -8,7 +9,8 @@ const Main = () => {
         <main>
             <Routes>
                 <Route path={"/"} element={<Acc/>}/>
-                <Route path={"/logo"} element={<Logo/>}/>
+                <Route path={"/logo"} element={<LogoAcc/>}/>
+                <Route path={"/size"} element={<SizeAcc/>}/>
             </Routes>
         </main>
     );

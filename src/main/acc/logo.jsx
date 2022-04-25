@@ -1,7 +1,7 @@
 import { useState } from "react";
 import {Link} from 'react-router-dom'
 
-const Logo = () => {
+const LogoAcc = () => {
     const [logo,setLogo] = useState(process.env.PUBLIC_URL+"/img/logo_round.svg");
     const [ready,setReady] = useState(false);
     // const LogoPreview = () => {
@@ -16,7 +16,7 @@ const Logo = () => {
             <div className="main__block">
                 <h1>[Этап 1/4] Конструктор бейджиков/аккредитации</h1>
                 <p className="sub_content">Этап 1/4. Загрузите ваш логотип организации/компаний</p>
-                <div className="main__block_interface_menu">
+                <div className="main__block_interface_menu c-m">
                     <div className="main__block_interface_menu_c">
                         <h1>Загрузка логотипа</h1>
                     </div>
@@ -29,7 +29,7 @@ const Logo = () => {
                     </div>
                     <div className="main__block_interface_menu_c flex">
                         <button className="main__block_interface_btn_back">Пропустить</button>
-                        {!ready ? <button className="main__block_interface_btn_forward">Продолжить</button>: <Link to="s" className="main__block_interface_btn_forward">Продолжить</Link>}
+                        {!ready ? <button className="main__block_interface_btn_forward">Продолжить</button>: <Link to="/size" className="main__block_interface_btn_forward">Продолжить</Link>}
                         
                     </div>
                 </div>
@@ -38,4 +38,4 @@ const Logo = () => {
     );
 }
 
-export default Logo;
+export default LogoAcc;
