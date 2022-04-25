@@ -18,20 +18,21 @@ const SizeAcc = () => {
                     </div>
 
                     <div className="main__block_interface_menu_c flex">
-                        <div className="main__block_interface_menu_c_book">
-                            <div className="main__block_interface_menu_c_book_block">
-
+                        <label className="main__block_i_l">
+                            <input type="radio" name="choice" id="bookChoice" checked="checked" />
+                            <div className="main__block_interface_menu_c_book choice_land">
+                                <div className="main__block_interface_menu_c_book_block"></div>
+                                <span>Книжная</span>
                             </div>
-                            <span className="main__block_interface_menu_cmain__block_interface_menu_c_book_block_text">Книжная</span>
-                            
-                        </div>
+                        </label>
                         
-                        <div className="main__block_interface_menu_c_album">
-                            <div className="main__block_interface_menu_c_album_block">
-                                
+                        <label className="main__block_i_l">
+                            <input type="radio" name="choice" id="albumChoice" />
+                            <div className="main__block_interface_menu_c_album choice_land">
+                                <div className="main__block_interface_menu_c_album_block"></div>
+                                <span>Альбомная</span>
                             </div>
-                            <span>Альбомная</span>
-                        </div>
+                        </label>
                         
                     </div>
 
