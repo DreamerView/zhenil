@@ -50,6 +50,10 @@
     }
     div.main__block_interface_menu {
         width: 1300px;
+        padding: 40px 0;
+    }
+    button.main__block_interface_btn_forward {
+        margin-left:60px;
     }
 }
 @media screen and (min-width:1161px) and (max-width:1899px) {
@@ -102,6 +106,10 @@
     }
     div.main__block_interface_menu {
         width: 933px;
+        padding: 40px 0;
+    }
+    button.main__block_interface_btn_forward {
+        margin-left:60px;
     }
 }
 @media (min-width:601px) and (max-width:1160px) {
@@ -158,6 +166,10 @@
     }
     div.main__block_interface_menu {
         width: 100%;
+        padding: 32px 16px;
+    }
+    button.main__block_interface_btn_forward {
+        margin-left:40px;
     }
 }
 @media (min-width:1px) and (max-width:600px) {
@@ -223,7 +235,11 @@
         grid-template-columns: 95%;
     }
     div.main__block_interface_menu {
-        width: 100%;
+        width: 90%;
+        padding: 32px 16px;
+    }
+    button.main__block_interface_btn_forward {
+        margin-left:16px;
     }
 }
 
@@ -472,7 +488,6 @@ div.main__block_interface_menu {
     height: auto;
     border: 1px solid var(--border-color);
     border-radius: 14px;
-    padding: 40px 0;
 }
 div.main__block_interface_menu_c {
     text-align: center;
@@ -515,7 +530,6 @@ button.main__block_interface_btn_forward {
     line-height: 21px;
     color: #fff;
     cursor: pointer;
-    margin-left:60px;
     opacity:60%;
     cursor: not-allowed;
 }
@@ -542,11 +556,11 @@ div.main__block_interface_menu_c_book {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    border:1px solid transparent;
+    border:1.5px solid transparent;
 }
 div.main__block_interface_menu_c_book:hover {
     border-radius: 14px;
-    border:1px solid var(--green_back);
+    border:1.5px solid var(--green_back);
 }
 div.main__block_interface_menu_c_book_block {
     width: 85px;
@@ -557,7 +571,7 @@ div.main__block_interface_menu_c_book_block {
 }
 div.main__block_interface_menu_c_album:hover {
     border-radius: 14px;
-    border:1px solid var(--green_back);
+    border:1.5px solid var(--green_back);
 }
 div.main__block_interface_menu_c_album {
     width:200px;
@@ -567,7 +581,7 @@ div.main__block_interface_menu_c_album {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    border:1px solid transparent;
+    border:1.5px solid transparent;
 }
 div.main__block_interface_menu_c_album_block {
     width: 130px;
@@ -596,6 +610,19 @@ input.main__block_interface_menu_c_s_i {
     border-radius: 22.5px;
     border: 1px solid var(--border-color);
     text-align: center;
-    font-weight: 700;
     font-size:16px;
+}
+label.main__block_i_l {
+    display: block;
+    width:auto;
+}
+label.main__block_i_l > input{
+    visibility: hidden;
+}
+label.main__block_i_l > input + div.choice_land{
+    cursor:pointer;
+}
+label.main__block_i_l > input:checked + div.choice_land{
+    border-radius: 14px;
+    border:1.5px solid var(--green_back);
 }
