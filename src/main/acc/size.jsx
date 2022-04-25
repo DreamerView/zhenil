@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 const SizeAcc = () => {
     const [ready] = useState();
+    const [select,setSelect] = useState(true);
     return(
     <>
         <>
@@ -37,12 +38,18 @@ const SizeAcc = () => {
                     </div>
 
                     <div className="main__block_interface_menu_c">
+                        <select defaultValue="Choose-origin" onChange={()=>setSelect(false)} className="main__block_interface_menu_c_select" name="" id="">
+                            <option value="Choose-origin" disabled>Выберите единицу измерения</option>
+                            <option value="sm">Сантиментр (см)</option>
+                            <option value="dm">Дециметры (дм)</option>
+                            <option value="pix">Пискель (pix)</option>
+                        </select>
                         <div className="main__block_interface_menu_c_s flex">
-                            <input className="main__block_interface_menu_c_s_i" placeholder="Введите ширину" type="text" name="" id="" />
+                            <input disabled={select} className={select?"main__block_interface_menu_c_s_i disabled":"main__block_interface_menu_c_s_i"} placeholder="Введите ширину" type="text" name="" id="" />
                             <span className="main__block_interface_menu_c_s_t">Ширина</span>
                         </div>
                         <div className="main__block_interface_menu_c_s flex">
-                            <input className="main__block_interface_menu_c_s_i" placeholder="Введите высоту" type="text" name="" id="" />
+                            <input disabled={select} className={select?"main__block_interface_menu_c_s_i disabled":"main__block_interface_menu_c_s_i"} placeholder="Введите высоту" type="text" name="" id="" />
                             <span className="main__block_interface_menu_c_s_t">Высота</span>
                         </div>
 
