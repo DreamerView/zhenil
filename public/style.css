@@ -108,7 +108,7 @@
         padding:30px 26px 0 26px;
     }
     div.main__block_interface_menu {
-        width: 933px;
+        width: 1100px;
         padding: 40px 0;
     }
     button.main__block_interface_btn_forward {
@@ -172,7 +172,7 @@
     }
     div.main__block_interface_menu {
         width: 100%;
-        padding: 32px 16px;
+        padding: 32px 0;
     }
     button.main__block_interface_btn_forward {
         margin-left:40px;
@@ -261,7 +261,7 @@
 :root {
     --search-placeholder-color:#AFAFAF;
     --background-color:white;
-    --border-color: #F0F0F0;
+    --border-color: #E5E5EA;
     --font-color:black;
     --brand-color:#6C5DD2;
     --sub_content: #aaa;
