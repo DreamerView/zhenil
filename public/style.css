@@ -58,6 +58,9 @@
     div.choice_land {
         width:200px;
     }
+    select.main__block_interface_menu_c_select {
+        padding-left:32px;
+    }
 }
 @media screen and (min-width:1161px) and (max-width:1899px) {
     :root {
@@ -116,6 +119,9 @@
     }
     div.choice_land {
         width:200px;
+    }
+    select.main__block_interface_menu_c_select {
+        padding-left:32px;
     }
 }
 @media (min-width:601px) and (max-width:1160px) {
@@ -179,6 +185,9 @@
     }
     div.choice_land {
         width:150px;
+    }
+    select.main__block_interface_menu_c_select {
+        padding-left:32px;
     }
 }
 @media (min-width:1px) and (max-width:600px) {
@@ -255,6 +264,9 @@
     }
     div.choice_land {
         width:150px;
+    }
+    select.main__block_interface_menu_c_select {
+        padding-left:16px;
     }
 }
 
@@ -649,22 +661,14 @@ label.main__block_i_l > input:checked + div.choice_land{
     border:1.5px solid var(--green_back);
 }
 select.main__block_interface_menu_c_select {
-    text-align: center;
     max-width: 391px;
     width: 100%;
     height: 45px;
     border-radius: 22.5px;
     border:1px solid var(--border-color);
     margin-bottom: 16px;
-    text-align:-moz-center;
-    text-align:-webkit-center;
     font-size:16px;
     color:var(--font-color);
     background: url(img/top.svg) no-repeat 95% 50%;
     cursor: pointer;
-}
-select.main__block_interface_menu_c_select > option {
-    text-align: center;
-    text-align:-moz-center;
-    text-align:-webkit-center;
 }

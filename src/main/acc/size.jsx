@@ -41,7 +41,7 @@ const SizeAcc = () => {
                         <select defaultValue="Choose-origin" onChange={()=>setSelect(false)} className="main__block_interface_menu_c_select" name="" id="">
                             <option value="Choose-origin" disabled>Выберите единицу измерения</option>
                             <option value="sm">Сантиментр (см)</option>
-                            <option value="dm">Дециметры (дм)</option>
+                            <option value="dm">Дециметр (дм)</option>
                             <option value="pix">Пискель (pix)</option>
                         </select>
                         {!select?<>
