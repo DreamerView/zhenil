@@ -17,6 +17,7 @@
     }
     p.sub_content {
         font-size: 16px;
+        line-height: 24px;
         text-align: left;
         color: var(--sub_content);
         margin-top:20px;
@@ -82,6 +83,7 @@
     }
     p.sub_content {
         font-size: 16px;
+        line-height: 24px;
         text-align: left;
         color: var(--sub_content);
         margin-top:20px;
@@ -144,6 +146,7 @@
     }
     p.sub_content {
         font-size: 14px;
+        line-height: 20px;
         text-align: left;
         color: var(--sub_content);
         margin-top:20px;
@@ -214,6 +217,7 @@
     }
     p.sub_content {
         font-size: 14px;
+        line-height: 20px;
         text-align: left;
         color: var(--sub_content);
         margin-top:20px;
@@ -284,34 +288,34 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --background-color:#1C1C1E;
-        --border-color: #3A3A3C;
-        --font-color:white;
-        --brand-color:#6C5DD2;
-        --sub_content: #ACACB3;
-        --block_back_color: #2C2C2E;
-        --green_back: #32D74B;
-        --purple_back: #BF5AF2;
-        --blue_back: #0A84FF;
-        --input_back:#2C2C2E;
-        --input_back_text: #ACACB3;
+        --background-color:hsl(240, 3%, 11%);
+        --border-color: hsl(240, 2%, 23%);
+        --font-color:hsl(0, 0%, 100%);
+        --brand-color:hsl(248, 57%, 59%);
+        --sub_content:hsl(240, 4%, 69%);
+        --block_back_color:hsl(240, 2%, 18%);
+        --green_back:hsl(129, 67%, 52%);
+        --purple_back:hsl(280, 85%, 65%);
+        --blue_back:hsl(210, 100%, 52%);
+        --input_back:hsl(240, 2%, 18%);
+        --input_back_text:hsl(240, 4%, 69%);
         --input_border:transparent;
     }
 }
 @media (prefers-color-scheme: light) {
     :root {
-        --background-color:white;
-        --border-color: #E5E5EA;
-        --font-color:black;
-        --brand-color:#6C5DD2;
-        --sub_content: #aaa;
-        --block_back_color: #FBFBFB;
-        --green_back: #34C759;
-        --purple_back: #AF52DE;
-        --blue_back: #007AFF;
-        --input_back:white;
-        --input_back_text: #AFAFAF;
-        --input_border:#E5E5EA;
+        --background-color:hsl(0, 0%, 100%);
+        --border-color:hsl(240, 11%, 91%);
+        --font-color:hsl(0, 0%, 0%);
+        --brand-color:hsl(248, 57%, 59%);
+        --sub_content:	hsl(0, 0%, 67%);
+        --block_back_color:hsl(0, 0%, 98%);
+        --green_back: hsl(135, 59%, 49%);
+        --purple_back:hsl(280, 68%, 60%);
+        --blue_back: hsl(211, 100%, 50%);
+        --input_back:hsl(0, 0%, 100%);
+        --input_back_text:	hsl(0, 0%, 69%);
+        --input_border:hsl(240, 11%, 91%);
     }
 }
 
@@ -594,7 +598,7 @@ button.main__block_interface_btn_forward {
     font-weight: bold;
     font-size: 16px;
     line-height: 21px;
-    color: #fff;
+    color: white;
     cursor: pointer;
     opacity:60%;
     cursor: not-allowed;
@@ -609,7 +613,7 @@ a.main__block_interface_btn_forward {
     font-weight: bold;
     font-size: 16px;
     line-height: 21px;
-    color: #fff;
+    color: white;
     cursor: pointer;
 
     text-decoration: none;
