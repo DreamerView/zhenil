@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/zhenil/static/js/main.de5d305e.js",
+    "main.js": "/zhenil/static/js/main.b61939db.js",
     "static/js/787.0bd6f522.chunk.js": "/zhenil/static/js/787.0bd6f522.chunk.js",
     "index.html": "/zhenil/index.html",
-    "main.de5d305e.js.map": "/zhenil/static/js/main.de5d305e.js.map",
+    "main.b61939db.js.map": "/zhenil/static/js/main.b61939db.js.map",
     "787.0bd6f522.chunk.js.map": "/zhenil/static/js/787.0bd6f522.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.de5d305e.js"
+    "static/js/main.b61939db.js"
   ]
 }
