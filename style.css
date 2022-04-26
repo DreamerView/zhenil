@@ -61,6 +61,9 @@
     select.main__block_interface_menu_c_select {
         padding-left:32px;
     }
+    a.main__block_interface_btn_forward {
+        margin-left:60px;
+    }
 }
 @media screen and (min-width:1161px) and (max-width:1899px) {
     :root {
@@ -123,11 +126,14 @@
     select.main__block_interface_menu_c_select {
         padding-left:32px;
     }
+    a.main__block_interface_btn_forward {
+        margin-left:60px;
+    }
 }
 @media (min-width:601px) and (max-width:1160px) {
     :root {
         --m-1: 30px 32px;
-        --i-s: 0 48px;
+        --i-s: 0 60px;
         --display: flex;
     }
     h3 {
@@ -189,11 +195,14 @@
     select.main__block_interface_menu_c_select {
         padding-left:32px;
     }
+    a.main__block_interface_btn_forward {
+        margin-left:60px;
+    }
 }
 @media (min-width:1px) and (max-width:600px) {
     :root {
-        --m-1: 24px 16px;
-        --i-s: 0 48px;
+        --m-1: 30px 16px;
+        --i-s: 0 52px;
         --display: flex;
     }
     h3 {
@@ -229,7 +238,7 @@
         width:50%;
     }
     div.header__search {
-        padding-top:24px;
+        padding-top:30px;
         width: 100%;
     }
 
@@ -268,6 +277,9 @@
     select.main__block_interface_menu_c_select {
         padding-left:16px;
     }
+    a.main__block_interface_btn_forward {
+        margin-left:16px;
+    }
 }
 
 :root {
@@ -302,7 +314,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size:16px;
-    background-color: white;
+    background-color: var(--background-color);
 }
 input,button,input:focus,textarea,textarea:focus,select {
     background-color: transparent;
@@ -579,7 +591,7 @@ a.main__block_interface_btn_forward {
     line-height: 21px;
     color: #fff;
     cursor: pointer;
-    margin-left:60px;
+
     text-decoration: none;
 }
 div.main__block_interface_menu_c_book {
