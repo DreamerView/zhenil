@@ -6,6 +6,7 @@
 @media screen and (min-width:1900px) {
     :root {
         --m-1: 30px 150px;
+        --m-2: 60px 150px;
         --i-s: 0 60px;
         --display: flex;
     }
@@ -51,7 +52,7 @@
     }
     div.main__block_interface_menu {
         width: 1300px;
-        padding: 40px 0;
+        padding: 60px 0;
     }
     button.main__block_interface_btn_forward {
         margin-left:60px;
@@ -69,6 +70,7 @@
 @media screen and (min-width:1161px) and (max-width:1899px) {
     :root {
         --m-1: 30px 50px;
+        --m-2: 60px 50px;
         --i-s: 0 60px;
         --display: flex;
     }
@@ -117,7 +119,7 @@
     }
     div.main__block_interface_menu {
         width: 1075px;
-        padding: 40px 0;
+        padding: 60px 0;
     }
     button.main__block_interface_btn_forward {
         margin-left:60px;
@@ -135,6 +137,7 @@
 @media (min-width:601px) and (max-width:1160px) {
     :root {
         --m-1: 30px 32px;
+        --m-2: 60px 32px;
         --i-s: 0 60px;
         --display: flex;
     }
@@ -205,6 +208,7 @@
 @media (min-width:1px) and (max-width:600px) {
     :root {
         --m-1: 30px 16px;
+        --m-2: 60px 16px;
         --i-s: 0 52px;
         --display: flex;
     }
@@ -481,7 +485,7 @@ div.main__nav {
     border-bottom: 1px solid var(--border-color);
 }
 div.main__block {
-    padding:var(--m-1);
+    padding:var(--m-2);
 }
 div.main__block_menu_select_block {
     height: 304px;
