@@ -292,16 +292,16 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --background-color:hsl(240, 3%, 11%);
-        --border-color: hsl(240, 2%, 23%);
+        --background-color:#0a0a0a;
+        --border-color: #2c2d2e;
         --font-color:hsl(0, 0%, 100%);
         --brand-color:hsl(248, 57%, 59%);
         --sub_content:hsl(240, 4%, 69%);
-        --block_back_color:hsl(240, 2%, 18%);
+        --block_back_color:#19191a;
         --green_back:hsl(129, 67%, 52%);
         --purple_back:hsl(280, 85%, 65%);
         --blue_back:hsl(210, 100%, 52%);
-        --input_back:hsl(240, 2%, 18%);
+        --input_back:#19191a;
         --input_back_text:hsl(240, 4%, 69%);
         --input_border:transparent;
     }
