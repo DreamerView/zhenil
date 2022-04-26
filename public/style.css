@@ -208,7 +208,7 @@
 @media (min-width:1px) and (max-width:600px) {
     :root {
         --m-1: 30px 16px;
-        --m-2: 60px 16px;
+        --m-2: 30px 16px;
         --i-s: 0 52px;
         --display: flex;
     }
