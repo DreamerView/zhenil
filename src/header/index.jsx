@@ -1,9 +1,13 @@
+import { useMediaQuery } from 'react-responsive';
+
 const Header = () => {
+    const checkMode = useMediaQuery({query:'(prefers-color-scheme: dark)'});
+    const result = checkMode?"/img/logo-night.png":"/img/logo.png";
     return(
         <header>
     <div className="header__logo">
       <div className="header__logo_pic">
-        <img loading="lazy" className="header__logo_img" src={process.env.PUBLIC_URL+"/img/logo.png"} alt="Logo" />
+        <img loading="lazy" className="header__logo_img" src={process.env.PUBLIC_URL+result} alt="Logo" />
       </div>
     </div>
     <div className="header__action">
