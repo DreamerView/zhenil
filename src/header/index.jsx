@@ -2,12 +2,12 @@ import { useMediaQuery } from 'react-responsive';
 
 const Header = () => {
     const checkMode = useMediaQuery({query:'(prefers-color-scheme: dark)'});
-    const result = checkMode?"/img/logo-night.png":"/img/logo.png";
+    const result = checkMode?"-night":"";
     return(
         <header>
     <div className="header__logo">
       <div className="header__logo_pic">
-        <img loading="lazy" className="header__logo_img" src={process.env.PUBLIC_URL+result} alt="Logo" />
+        <img loading="lazy" className="header__logo_img" src={process.env.PUBLIC_URL+"/img/logo"+result+".png"} alt="Logo" />
       </div>
     </div>
     <div className="header__action">
@@ -15,7 +15,7 @@ const Header = () => {
       <div className="header__action_block">
         <span className="header__action_block_text">EN</span>
         <div className="header__search_menu_pic">
-          <img className="header__search_menu_img" src={process.env.PUBLIC_URL+"/img/top.svg"} alt="icon" />
+          <img className="header__search_menu_img" src={process.env.PUBLIC_URL+"/img/top"+result+".svg"} alt="icon" />
         </div>
       </div>
     </div>
@@ -24,7 +24,7 @@ const Header = () => {
 
       <div className="header__search_menu">
         <div className="header__search_menu_pic" id="search_menu">
-          <img loading="lazy" className="header__search_menu_img" src={process.env.PUBLIC_URL+"/img/menu.svg"} alt="icon" />
+          <img loading="lazy" className="header__search_menu_img" src={process.env.PUBLIC_URL+"/img/menu"+result+".svg"} alt="icon" />
         </div>
         <span className="header__search_menu_text">Menu</span>
       </div>
