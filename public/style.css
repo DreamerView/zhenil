@@ -292,16 +292,16 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --background-color:hsl(0, 0%, 4%);
+        --background-color:#181818;
         --border-color: hsl(210, 2%, 18%);
         --font-color:hsl(0, 0%, 100%);
         --brand-color:hsl(248, 57%, 59%);
         --sub_content:hsl(240, 4%, 69%);
-        --block_back_color:hsl(240, 2%, 10%);
+        --block_back_color:hsl(210, 2%, 18%);
         --green_back:hsl(129, 67%, 52%);
         --purple_back:hsl(280, 85%, 65%);
         --blue_back:hsl(210, 100%, 52%);
-        --input_back:hsl(240, 2%, 10%);
+        --input_back:hsl(210, 2%, 18%);
         --input_back_text:hsl(240, 4%, 69%);
         --input_border:transparent;
     }
@@ -557,7 +557,7 @@ button.main__block_menu_select_main_button {
 p.main__block_menu_select_main_p {
     font-size: 14px;
     font-weight: normal;
-    line-height: 20px;
+    line-height: 24px;
     height:56px;
 }
 div.main__block_interface_menu {
