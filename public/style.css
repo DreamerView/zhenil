@@ -192,7 +192,7 @@
 }
 @media (min-width:1px) and (max-width:600px) {
     :root {
-        --m-1: 30px 16px;
+        --m-1: 24px 16px;
         --i-s: 0 48px;
         --display: flex;
     }
@@ -229,7 +229,7 @@
         width:50%;
     }
     div.header__search {
-        padding-top:30px;
+        padding-top:24px;
         width: 100%;
     }
 
