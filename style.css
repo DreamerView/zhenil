@@ -168,7 +168,7 @@
     :root {
         --m-1: 30px 16px;
         --m-2: 30px 16px;
-        --i-s: 0 52px;
+        --i-s: 0 24px 0 52px;
         --display: flex;
     }
     h3 {
