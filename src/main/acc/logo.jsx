@@ -1,5 +1,6 @@
 import { useState } from "react";
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
+import './acc.css'
 
 const LogoAcc = () => {
     const [logo,setLogo] = useState(process.env.PUBLIC_URL+"/img/logo_round.svg");
