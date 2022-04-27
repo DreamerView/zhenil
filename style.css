@@ -5,17 +5,17 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --background-color:#111215;
-        --border-color: #1f2023;
+        --background-color:hsl(225, 6%, 13%);
+        --border-color: hsl(225, 4%, 20%);
         --font-color:hsl(0, 0%, 100%);
         --brand-color:hsl(241, 100%, 74%);
         --sub_content:hsl(240, 4%, 69%);
-        --block_back_color:#1f2023;
+        --block_back_color:hsl(225, 4%, 20%);
         --green_back:hsl(129, 67%, 52%);
         --purple_back:hsl(280, 85%, 65%);
         --blue_back:hsl(210, 100%, 52%);
-        --input_back:#1f2023;
-        --input_back_text:rgba(255,255,255,.45);
+        --input_back:hsl(225, 4%, 20%);
+        --input_back_text:hsl(213, 5%, 62%);
         --input_border:transparent;
         --search_icon: url(img/search_night.svg);
     }
@@ -388,4 +388,17 @@ span.header__action_block_text {
 }
 
 /* Main */
+
+div.main__preloader {
+    width:100%;
+    height:80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img.main__preloader_pic {
+    width: 100px;
+    height: 100px;
+}
 
