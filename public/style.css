@@ -5,17 +5,17 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --background-color:hsl(0, 0%, 9%);
-        --border-color: hsl(0, 0%, 19%);
+        --background-color:hsl(0, 0%, 5%);
+        --border-color: hsl(240, 3%, 11%);
         --font-color:hsl(0, 0%, 100%);
         --brand-color:hsl(241, 100%, 74%);
         --sub_content:hsl(240, 4%, 69%);
-        --block_back_color:hsl(0, 0%, 19%);
+        --block_back_color:hsl(240, 3%, 11%);
         --green_back:hsl(129, 67%, 52%);
         --purple_back:hsl(280, 85%, 65%);
         --blue_back:hsl(210, 100%, 52%);
-        --input_back:hsl(0, 0%, 19%);
-        --input_back_text:#acacac;
+        --input_back:hsl(240, 3%, 11%);
+        --input_back_text:hsl(0, 0%, 67%);
         --input_border:transparent;
         --search_icon: url(img/search_night.svg);
     }
