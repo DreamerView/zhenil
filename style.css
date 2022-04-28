@@ -23,16 +23,16 @@
 @media (prefers-color-scheme: light) {
     :root {
         --background-color:hsl(0, 0%, 100%);
-        --border-color:#f4f4f4;
+        --border-color:#f3f3f3;
         --font-color:hsl(0, 0%, 0%);
         --brand-color:#4634BC;
         --sub_content:hsla(240, 6%, 25%,.6);
-        --block_back_color:#f4f4f4;
+        --block_back_color:#f3f3f3;
         --green_back: hsl(135, 59%, 49%);
         --purple_back:hsl(280, 68%, 60%);
         --blue_back: hsl(211, 100%, 50%);
-        --input_back:#f4f4f4;
-        --input_back_text:#adadaf;
+        --input_back:#f3f3f3;
+        --input_back_text:#a09fa5;
         --input_border:transparent;
         --search_icon: url(img/search.svg);
     }
