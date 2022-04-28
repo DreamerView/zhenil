@@ -5,7 +5,7 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --background-color:hsl(0, 0%, 5%);
+        --background-color:hsl(0, 0%, 0%);
         --border-color: hsl(240, 3%, 11%);
         --font-color:hsl(0, 0%, 100%);
         --brand-color:hsl(241, 100%, 74%);
