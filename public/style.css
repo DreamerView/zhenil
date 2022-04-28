@@ -23,15 +23,15 @@
 @media (prefers-color-scheme: light) {
     :root {
         --background-color:hsl(0, 0%, 100%);
-        --border-color:hsla(0, 0%, 95%,.8);
+        --border-color:hsl(252, 22%, 95%);
         --font-color:hsl(0, 0%, 0%);
         --brand-color:hsl(248, 57%, 47%);
         --sub_content:hsla(240, 6%, 25%,.6);
-        --block_back_color:hsla(0, 0%, 95%,.8);
+        --block_back_color:hsl(252, 22%, 95%);
         --green_back: hsl(135, 59%, 49%);
         --purple_back:hsl(280, 68%, 60%);
         --blue_back: hsl(211, 100%, 50%);
-        --input_back:hsla(0, 0%, 95%,.8);
+        --input_back:hsl(252, 22%, 95%);
         --input_back_text:hsl(250, 3%, 44%);
         --input_border:transparent;
         --search_icon: url(img/search.svg);
