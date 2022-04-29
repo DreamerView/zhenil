@@ -7,8 +7,8 @@
     :root {
         --background-color:hsl(240, 3%, 11%);
         --block-color: hsl(240, 2%, 23%);
-        --font-color:hsl(0, 0%, 100%);
-        --brand-color:hsl(241, 100%, 74%);
+        --font-color:hsl(216, 9%, 89%);
+        --brand-color:#7D7AFF;
         --sub_content:hsla(240, 33%, 94%,.6);
         --green_back:hsl(129, 67%, 52%);
         --purple_back:hsl(280, 85%, 65%);
