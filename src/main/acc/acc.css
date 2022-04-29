@@ -111,7 +111,7 @@ div.main__block {
     padding:var(--m-2);
 }
 div.main__block_menu_select_block {
-    height: 304px;
+    height: 314px;
     background-color: var(--block-color);
     border-radius: 14px;
     cursor: pointer;
@@ -177,8 +177,8 @@ button.main__block_menu_select_main_button {
 p.main__block_menu_select_main_p {
     font-size: 14px;
     font-weight: normal;
-    line-height: 26px;
-    height:56px;
+    line-height: 24px;
+    height:66px;
 }
 div.main__block_interface_menu {
     align-items: center;
