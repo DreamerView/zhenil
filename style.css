@@ -25,7 +25,7 @@
 @media (prefers-color-scheme: light) {
     :root {
         --background-color:hsl(0, 0%, 100%);
-        --block-color:#efefef;
+        --block-color:hsl(0, 0%, 95%);
         --menu-color:#6C5DD2;
         --menu-border-color:#6C5DD2;
         --menu-font-color:hsl(0, 0%, 100%);
