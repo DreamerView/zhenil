@@ -17,7 +17,7 @@ const Acc = () => {
                 <img className="main__block_menu_select_block_icon_img" loading="lazy" src={process.env.PUBLIC_URL+"/img/person.svg"} alt="icon"/>
             </div>
             <div className="main__block_menu_select_main">
-                <h5>Для одного человека</h5>
+                <h4>Для одного человека</h4>
             </div>
             <div className="main__block_menu_select_main">
                 <p className="main__block_menu_select_main_p">Нужно для одного человека? Не беда, просто используйте наш удобный конструктор и создавайте</p>
@@ -34,7 +34,7 @@ const Acc = () => {
                 <img className="main__block_menu_select_block_icon_img" loading="lazy" src={process.env.PUBLIC_URL+"/img/group.svg"} alt="icon"/>
             </div>
             <div className="main__block_menu_select_main">
-                <h5>Для несколько людей</h5>
+                <h4>Для несколько людей</h4>
             </div>
             <div className="main__block_menu_select_main">
                 <p className="main__block_menu_select_main_p">Нужно для несколько людей? Не беда, просто используйте наш удобный конструктор и создавайте</p>
@@ -51,7 +51,7 @@ const Acc = () => {
                 <img className="main__block_menu_select_block_icon_img" loading="lazy" src={process.env.PUBLIC_URL+"/img/help.svg"} alt="icon"/>
             </div>
             <div className="main__block_menu_select_main">
-                <h5>Инфографика</h5>
+                <h4>Инфографика</h4>
             </div>
             <div className="main__block_menu_select_main">
                 <p className="main__block_menu_select_main_p">Хотите подробно узнать как можно использовать конструктор?</p>
