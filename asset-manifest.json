@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/zhenil/static/js/main.4fd4fd15.js",
+    "main.js": "/zhenil/static/js/main.4bc52689.js",
     "static/css/551.5e0880dd.chunk.css": "/zhenil/static/css/551.5e0880dd.chunk.css",
-    "static/js/551.bebfa022.chunk.js": "/zhenil/static/js/551.bebfa022.chunk.js",
+    "static/js/551.865843ba.chunk.js": "/zhenil/static/js/551.865843ba.chunk.js",
     "static/css/552.5e0880dd.chunk.css": "/zhenil/static/css/552.5e0880dd.chunk.css",
     "static/js/552.fd79465f.chunk.js": "/zhenil/static/js/552.fd79465f.chunk.js",
     "static/css/266.5e0880dd.chunk.css": "/zhenil/static/css/266.5e0880dd.chunk.css",
@@ -10,9 +10,9 @@
     "static/js/787.0bd6f522.chunk.js": "/zhenil/static/js/787.0bd6f522.chunk.js",
     "index.html": "/zhenil/index.html",
     "static/media/top.svg": "/zhenil/static/media/top.328459b25f66f2c25f91.svg",
-    "main.4fd4fd15.js.map": "/zhenil/static/js/main.4fd4fd15.js.map",
+    "main.4bc52689.js.map": "/zhenil/static/js/main.4bc52689.js.map",
     "551.5e0880dd.chunk.css.map": "/zhenil/static/css/551.5e0880dd.chunk.css.map",
-    "551.bebfa022.chunk.js.map": "/zhenil/static/js/551.bebfa022.chunk.js.map",
+    "551.865843ba.chunk.js.map": "/zhenil/static/js/551.865843ba.chunk.js.map",
     "552.5e0880dd.chunk.css.map": "/zhenil/static/css/552.5e0880dd.chunk.css.map",
     "552.fd79465f.chunk.js.map": "/zhenil/static/js/552.fd79465f.chunk.js.map",
     "266.5e0880dd.chunk.css.map": "/zhenil/static/css/266.5e0880dd.chunk.css.map",
@@ -20,6 +20,6 @@
     "787.0bd6f522.chunk.js.map": "/zhenil/static/js/787.0bd6f522.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.4fd4fd15.js"
+    "static/js/main.4bc52689.js"
   ]
 }
