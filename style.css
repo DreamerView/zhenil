@@ -84,7 +84,7 @@ p.sub_content {
     :root {
         --m-1: 30px 150px;
         --m-2: 74px 150px;
-        --n-1: 16px 150px;
+        --n-1: 24px 150px;
         --n-b: var(--border-color);
         --i-s: 0 60px;
         --display: flex;
@@ -111,8 +111,8 @@ p.sub_content {
 @media screen and (min-width:1161px) and (max-width:1899px) {
     :root {
         --m-1: 30px 50px;
-        --m-2: 66px 50px;
-        --n-1: 16px 50px;
+        --m-2: 74px 50px;
+        --n-1: 24px 50px;
         --n-b: var(--border-color);
         --i-s: 0 60px;
         --display: flex;
