@@ -5,27 +5,36 @@
 
 h1 {
     font-size:34px;
-    line-height:41px;
+    line-height:52px;
 }
 h2 {
     font-size:28px;
-    line-height:auto;
+    line-height:43px;
 }
 h3 {
     font-size:22px;
-    line-height:28px;
+    line-height:34px;
 }
 h4 {
     font-size:20px;
-    line-height:24px;
+    line-height:31px;
 }
 h5 {
     font-size:17px;
-    line-height:22px;
+    line-height:27px;
 }
 h6 {
     font-size:16px;
-    line-height:21px;
+    line-height:25px;
+}
+p {
+    font-size:16px;
+    line-height:25px;
+}
+
+p.sub_content {
+    color: var(--sub_content);
+    margin-top:20px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -42,27 +51,29 @@ h6 {
         --green_back:hsl(129, 67%, 52%);
         --purple_back:hsl(280, 85%, 65%);
         --blue_back:hsl(210, 100%, 52%);
-        --input_back_text:hsl(212, 8%, 73%);
+        --input_back_text:hsl(212, 8%, 63%);
         --input_border:transparent;
+        --border-color:hsl(240, 1%, 20%);
         --search_icon: url(img/search_night.svg);
     }
 }
 @media (prefers-color-scheme: light) {
     :root {
         --background-color:hsl(0, 0%, 100%);
-        --block-color:hsl(252, 38%, 97%);
+        --block-color:#f2f3f5;
         --menu-color:hsl(248, 57%, 59%);
         --menu-border-color:hsl(248, 57%, 59%);
         --menu-font-color:hsl(0, 0%, 100%);
         --input_back:hsl(0, 0%, 100%);
         --font-color:hsl(0, 0%, 0%);
         --brand-color:hsl(248, 57%, 47%);
-        --sub_content:hsla(240, 6%, 25%,.6);
+        --sub_content:#5f6368;
         --green_back: hsl(135, 59%, 49%);
         --purple_back:hsl(280, 68%, 60%);
         --blue_back: hsl(211, 100%, 50%);
         --input_back_text:hsl(206, 7%, 58%);
         --input_border:hsl(195, 13%, 94%);
+        --border-color:hsl(216, 10%, 90%);
         --search_icon: url(img/search.svg);
     }
 }
@@ -73,13 +84,6 @@ h6 {
         --m-2: 60px 150px;
         --i-s: 0 60px;
         --display: flex;
-    }
-    p.sub_content {
-        font-size: 16px;
-        line-height: 24px;
-        text-align: left;
-        color: var(--sub_content);
-        margin-top:20px;
     }
     input.header__search_input {
         width: 646px;
@@ -107,13 +111,6 @@ h6 {
         --i-s: 0 60px;
         --display: flex;
     }
-    p.sub_content {
-        font-size: 16px;
-        line-height: 24px;
-        text-align: left;
-        color: var(--sub_content);
-        margin-top:20px;
-    }
     input.header__search_input {
         width: 380px;
     }
@@ -139,13 +136,6 @@ h6 {
         --m-2: 60px 32px;
         --i-s: 0 60px;
         --display: flex;
-    }
-    p.sub_content {
-        font-size: 14px;
-        line-height: 20px;
-        text-align: left;
-        color: var(--sub_content);
-        margin-top:20px;
     }
     header {
         grid-template-columns: 50% 50%;
@@ -178,13 +168,6 @@ h6 {
         --m-2: 30px 16px;
         --i-s: 0 24px 0 52px;
         --display: flex;
-    }
-    p.sub_content {
-        font-size: 14px;
-        line-height: 20px;
-        text-align: left;
-        color: var(--sub_content);
-        margin-top:20px;
     }
     header {
         grid-template-columns: 50% 50%;
@@ -249,13 +232,15 @@ h6 {
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size:16px;
-    line-height:21px;
+    line-height:25px;
     background-color: var(--background-color);
     color:var(--font-color);
+    font-display: optional;
 }
 input,button,input:focus,textarea,textarea:focus,select {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size:16px;
+    line-height:25px;
     background-color: transparent;
     border:0 none;
     outline:none;
@@ -264,6 +249,7 @@ input,button,input:focus,textarea,textarea:focus,select {
 	-webkit-appearance: none; 
 	appearance: none;
     color:var(--font-color);
+    font-display: optional;
 }
 
 a {
@@ -282,7 +268,7 @@ header {
     padding:var(--m-1);
     background-color: var(--background-color);
     display: var(--display);
-    border-bottom:1px solid var(--block-color);
+    border-bottom:1px solid var(--border-color);
 }
 
 
