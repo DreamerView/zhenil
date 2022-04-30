@@ -26,8 +26,8 @@
     :root {
         --background-color:hsl(0, 0%, 100%);
         --block-color:hsl(220, 20%, 97%);
-        --menu-color:#6C5DD2;
-        --menu-border-color:#6C5DD2;
+        --menu-color:hsl(248, 57%, 59%);
+        --menu-border-color:hsl(248, 57%, 59%);
         --menu-font-color:hsl(0, 0%, 100%);
         --input_back:hsl(0, 0%, 100%);
         --font-color:hsl(0, 0%, 0%);
