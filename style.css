@@ -45,6 +45,7 @@ p.sub_content {
         --menu-border-color:hsl(240, 1%, 18%);
         --menu-font-color:hsl(241, 100%, 74%);
         --input_back:hsl(240, 1%, 18%);
+        --nav_block:hsl(240, 2%, 8%);
         --font-color:hsl(0, 0%, 100%);
         --brand-color:hsl(241, 100%, 74%);
         --sub_content:hsla(240, 33%, 94%,.6);
@@ -65,6 +66,7 @@ p.sub_content {
         --menu-border-color:hsl(248, 57%, 59%);
         --menu-font-color:hsl(0, 0%, 100%);
         --input_back:hsl(0, 0%, 100%);
+        --nav_block:#fafafa;
         --font-color:hsl(0, 0%, 0%);
         --brand-color:hsl(248, 57%, 47%);
         --sub_content:#5f6368;
@@ -82,7 +84,6 @@ p.sub_content {
     :root {
         --m-1: 30px 150px;
         --m-2: 60px 150px;
-        --n-1: 30px 150px;
         --n-b: var(--border-color);
         --i-s: 0 60px;
         --display: flex;
@@ -109,8 +110,8 @@ p.sub_content {
 @media screen and (min-width:1161px) and (max-width:1899px) {
     :root {
         --m-1: 30px 50px;
-        --m-2: 60px 50px;
-        --n-1: 30px 50px;
+        --m-2: 66px 50px;
+        --n-1: 16px 50px;
         --n-b: var(--border-color);
         --i-s: 0 60px;
         --display: flex;
@@ -138,7 +139,6 @@ p.sub_content {
     :root {
         --m-1: 30px 32px;
         --m-2: 60px 32px;
-        --n-1: 30px 32px;
         --n-b: var(--border-color);
         --i-s: 0 60px;
         --display: flex;
@@ -171,8 +171,8 @@ p.sub_content {
 @media (min-width:1px) and (max-width:600px) {
     :root {
         --m-1: 30px 16px;
-        --m-2: 38px 16px;
-        --n-1: 10px 16px;
+        --m-2: 30px 16px;
+        --n-1: 16px 16px;
         --n-b: transparent;
         --i-s: 0 24px 0 52px;
         --display: flex;
@@ -220,7 +220,6 @@ p.sub_content {
         margin: 30px auto 0 auto;
     }
 }
-
 
 
 .flex {
@@ -276,7 +275,7 @@ header {
     padding:var(--m-1);
     background-color: var(--background-color);
     display: var(--display);
-    border-bottom:1px solid var(--n-b);
+    /* border-bottom:1px solid var(--border-color); */
 }
 
 
