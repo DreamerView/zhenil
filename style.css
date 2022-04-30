@@ -171,8 +171,8 @@ p.sub_content {
 @media (min-width:1px) and (max-width:600px) {
     :root {
         --m-1: 30px 16px;
-        --m-2: 48px 16px;
-        --n-1: 0 16px;
+        --m-2: 38px 16px;
+        --n-1: 10px 16px;
         --n-b: transparent;
         --i-s: 0 24px 0 52px;
         --display: flex;
