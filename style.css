@@ -83,7 +83,8 @@ p.sub_content {
 @media screen and (min-width:1900px) {
     :root {
         --m-1: 30px 150px;
-        --m-2: 60px 150px;
+        --m-2: 74px 150px;
+        --n-1: 16px 150px;
         --n-b: var(--border-color);
         --i-s: 0 60px;
         --display: flex;
@@ -138,7 +139,8 @@ p.sub_content {
 @media (min-width:601px) and (max-width:1160px) {
     :root {
         --m-1: 30px 32px;
-        --m-2: 60px 32px;
+        --m-2: 74px 32px;
+        --n-1: 16px 32px;
         --n-b: var(--border-color);
         --i-s: 0 60px;
         --display: flex;
@@ -171,7 +173,7 @@ p.sub_content {
 @media (min-width:1px) and (max-width:600px) {
     :root {
         --m-1: 30px 16px;
-        --m-2: 30px 16px;
+        --m-2: 54px 16px;
         --n-1: 16px 16px;
         --n-b: transparent;
         --i-s: 0 24px 0 52px;
@@ -239,6 +241,7 @@ p.sub_content {
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size:16px;
+    letter-spacing: 0.005em;
     line-height:25px;
     background-color: var(--background-color);
     color:var(--font-color);
