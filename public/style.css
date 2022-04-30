@@ -30,19 +30,19 @@ h6 {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --background-color:hsl(0, 0%, 10%);
-        --block-color: hsl(0, 0%, 19%);
-        --menu-color:hsl(0, 0%, 19%);
-        --menu-border-color:hsl(0, 0%, 19%);
+        --background-color:hsl(240, 2%, 10%);
+        --block-color: hsl(240, 1%, 18%);
+        --menu-color:hsl(240, 1%, 18%);
+        --menu-border-color:hsl(240, 1%, 18%);
         --menu-font-color:hsl(241, 100%, 74%);
-        --input_back:hsl(0, 0%, 19%);
+        --input_back:hsl(240, 1%, 18%);
         --font-color:hsl(0, 0%, 100%);
         --brand-color:hsl(241, 100%, 74%);
         --sub_content:hsla(240, 33%, 94%,.6);
         --green_back:hsl(129, 67%, 52%);
         --purple_back:hsl(280, 85%, 65%);
         --blue_back:hsl(210, 100%, 52%);
-        --input_back_text:hsl(0, 0%, 70%);
+        --input_back_text:hsl(212, 8%, 73%);
         --input_border:transparent;
         --search_icon: url(img/search_night.svg);
     }
