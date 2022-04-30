@@ -25,7 +25,7 @@
 @media (prefers-color-scheme: light) {
     :root {
         --background-color:hsl(0, 0%, 100%);
-        --block-color:hsl(0, 0%, 95%);
+        --block-color:hsl(220, 20%, 97%);
         --menu-color:#6C5DD2;
         --menu-border-color:#6C5DD2;
         --menu-font-color:hsl(0, 0%, 100%);
@@ -36,8 +36,8 @@
         --green_back: hsl(135, 59%, 49%);
         --purple_back:hsl(280, 68%, 60%);
         --blue_back: hsl(211, 100%, 50%);
-        --input_back_text:#838383;
-        --input_border:#6C5DD2;
+        --input_back_text:#8c959c;
+        --input_border:#eef1f2;
         --search_icon: url(img/search.svg);
     }
 }
