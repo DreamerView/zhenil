@@ -7,11 +7,11 @@ const Header = () => {
         <header>
     <div className="header__logo">
       <div className="header__logo_pic">
-        <img loading="lazy" className="header__logo_img" src={process.env.PUBLIC_URL+"/img/logo"+result+".png"} alt="Logo" />
+        <img loading="lazy" className="header__logo_img" src={process.env.PUBLIC_URL+"/img/logo"+result+".webp"} alt="Logo" />
       </div>
     </div>
     <div className="header__action">
-      <img loading="lazy" className="header__action_avatar" src={process.env.PUBLIC_URL+"/img/3600ABB7-7824-467A-BB26-6E86CDD1EC91.png"} alt="" />
+      <img loading="lazy" className="header__action_avatar" src={process.env.PUBLIC_URL+"/img/3600ABB7-7824-467A-BB26-6E86CDD1EC91.webp"} alt="" />
       <div className="header__action_block">
         <span className="header__action_block_text">EN</span>
         <div className="header__search_menu_pic">
