@@ -105,7 +105,8 @@
 
 div.main__nav {
     padding:var(--n-1);
-    border-bottom: 1px solid var(--n-b);
+    /* border-bottom: 1px solid var(--border-color); */
+    background-color: var(--nav_block);
 }
 div.main__block {
     padding:var(--m-2);
