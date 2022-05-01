@@ -394,7 +394,7 @@ div.main__preloader {
     justify-content: center;
 }
 
-img.main__preloader_pic {
+svg.main__preloader_pic {
     width: 100px;
     height: 100px;
 }
