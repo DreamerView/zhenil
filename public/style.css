@@ -39,16 +39,16 @@ p.sub_content {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --background-color:hsl(240, 3%, 11%);
+        --background-color:#1b1b1d;
         --block-color: hsl(240, 2%, 18%);
         --menu-color:hsl(240, 2%, 18%);
         --menu-border-color:hsl(240, 2%, 18%);
-        --menu-font-color:hsl(241, 100%, 74%);
+        --menu-font-color:#7d7aff;
         --input_back:hsl(240, 2%, 18%);
         --nav_block:hsl(240, 3%, 9%);
         --font-color:hsl(0, 0%, 100%);
-        --brand-color:hsl(241, 100%, 74%);
-        --sub_content:hsla(240, 33%, 94%,.6);
+        --brand-color:#7d7aff;
+        --sub_content:hsla(240, 33%, 94%, 0.6);
         --green_back:hsl(129, 67%, 52%);
         --purple_back:hsl(280, 85%, 65%);
         --blue_back:hsl(210, 100%, 52%);
@@ -63,7 +63,7 @@ p.sub_content {
         --background-color:hsl(0, 0%, 100%);
         --block-color:hsl(220, 13%, 95%);
         --menu-color:hsl(248, 57%, 59%);
-        --menu-border-color:hsl(248, 57%, 59%);
+        --menu-border-color:#6b5bd2;
         --menu-font-color:hsl(0, 0%, 100%);
         --input_back:hsl(0, 0%, 100%);
         --nav_block:hsl(0, 0%, 98%);
