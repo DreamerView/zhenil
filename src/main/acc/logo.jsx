@@ -1,4 +1,4 @@
-import { useState } from "react";
+import {useState} from "react";
 import {Link} from 'react-router-dom';
 import './acc.css'
 
@@ -8,7 +8,6 @@ const LogoAcc = () => {
     // const LogoPreview = () => {
 
     // };
-    console.log(logo);
     return(
         <>
             <div className="main__nav">

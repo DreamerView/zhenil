@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import './acc.css'
 
 const SizeAcc = () => {
-    const [ready] = useState();
+    const [ready] = useState('');
     const [select,setSelect] = useState(true);
     return(
     <>

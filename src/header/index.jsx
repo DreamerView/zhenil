@@ -1,8 +1,12 @@
+import { useState,useEffect } from 'react';
 import { useMediaQuery } from 'react-responsive';
 
 const Header = () => {
-    const checkMode = useMediaQuery({query:'(prefers-color-scheme: dark)'});
-    const result = checkMode?"-night":"";
+  const [result,setResult] = useState("");
+  const checkMode = useMediaQuery({query:'(prefers-color-scheme: dark)'});
+  useEffect(()=>{
+      checkMode?setResult("-night"):setResult("");
+  },[checkMode])
     return(
         <header>
     <div className="header__logo">
