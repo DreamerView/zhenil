@@ -5,7 +5,7 @@ const Acc = () => {
     return(
       <>
         <div className="main__nav">
-            <span><b className="b-color">Главная /</b> Конструктор</span>
+            <p><b className="b-color">Главная /</b> Конструктор</p>
         </div>
         <div className="main__block">
             <h3>Конструктор бейджиков/аккредитации</h3>

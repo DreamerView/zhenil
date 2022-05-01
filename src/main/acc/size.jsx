@@ -9,7 +9,7 @@ const SizeAcc = () => {
     <>
         <>
             <div className="main__nav">
-                <span><b className="b-color">Home /</b> Books</span>
+                <p><b className="b-color">Home /</b> Books</p>
             </div>
             <div className="main__block">
                 <h3>[Этап 2/4] Конструктор бейджиков/аккредитации</h3>

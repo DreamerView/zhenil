@@ -12,7 +12,7 @@ const LogoAcc = () => {
     return(
         <>
             <div className="main__nav">
-                <span><b className="b-color">Home /</b> Books</span>
+                <p><b className="b-color">Home /</b> Books</p>
             </div>
             <div className="main__block">
                 <h3>[Этап 1/4] Конструктор бейджиков/аккредитации</h3>
