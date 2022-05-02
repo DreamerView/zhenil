@@ -114,6 +114,9 @@
         margin-top:60px;
         width: 100%;
     }
+    span.main__block_interface_menu_c_s_t {
+        display:none;
+    }
 }
 
 div.main__nav {
@@ -356,8 +359,8 @@ select.main__block_interface_menu_c_select {
 
 }
 div.main__block_interface_menu_c_info_block {
-    padding-top: 22px;
-    margin-bottom:60px;
+    padding-top: 42px;
+    margin-bottom:80px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
