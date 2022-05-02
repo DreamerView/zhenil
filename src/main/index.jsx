@@ -4,6 +4,7 @@ import Preloader from './preloader';
 const Acc = lazy(()=>import('./acc'));
 const LogoAcc = lazy(()=>import('./acc/logo'));
 const SizeAcc = lazy(()=>import('./acc/size'));
+const InfoAcc = lazy(()=>import('./acc/info'));
 
 
 const Main = () => {
@@ -13,6 +14,7 @@ const Main = () => {
                 <Route path={"/"} element={<Suspense fallback={<Preloader/>}><Acc/></Suspense>}/>
                 <Route path={"/logo"} element={<Suspense fallback={<Preloader/>}><LogoAcc/></Suspense>}/>
                 <Route path={"/size"} element={<Suspense fallback={<Preloader/>}><SizeAcc/></Suspense>}/>
+                <Route path={"/info"} element={<Suspense fallback={<Preloader/>}><InfoAcc/></Suspense>}/>
             </Routes>
         </main>
     );

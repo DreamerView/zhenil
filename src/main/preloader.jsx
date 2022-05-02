@@ -5,7 +5,7 @@ const Preloader = () => {
     const [result,setResult] = useState("#4634bc");
     const checkMode = useMediaQuery({query:'(prefers-color-scheme: dark)'});
     useEffect(()=>{
-        checkMode?setResult("#7d7aff"):setResult("#4634bc");
+        checkMode===true?setResult("#7d7aff"):setResult("#4634bc");
     },[checkMode])
     return(
         <div className="main__preloader">
