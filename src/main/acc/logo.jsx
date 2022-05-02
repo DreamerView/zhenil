@@ -5,9 +5,6 @@ import './acc.css'
 const LogoAcc = () => {
     const [logo,setLogo] = useState(process.env.PUBLIC_URL+"/img/logo_round.svg");
     const [ready,setReady] = useState(false);
-    // const LogoPreview = () => {
-
-    // };
     return(
         <>
             <div className="main__nav">

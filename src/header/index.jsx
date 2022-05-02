@@ -5,8 +5,11 @@ const Header = () => {
   const [result,setResult] = useState("");
   const checkMode = useMediaQuery({query:'(prefers-color-scheme: dark)'});
   useEffect(()=>{
-      checkMode?setResult("-night"):setResult("");
+        checkMode===true?setResult("-night"):setResult("");
   },[checkMode])
+  useEffect(()=>{
+    console.log('Rendered')
+  },[])
     return(
         <header>
     <div className="header__logo">
