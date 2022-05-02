@@ -24,6 +24,7 @@ const InfoAcc = () => {
                             </label>
                             <input style={{display:'none'}} name="logoPreview" id="logoPreview" accept="image/*" type='file' onChange={(event)=>{setLogo(URL.createObjectURL(event.target.files[0]));setReady(true);}} />
                             <img className="main__block_interface_menu_logo_img" src={logo} alt="logo" />
+                            <p className="sub_content">Выберите фото</p>
                         </div>
                         <div className="main__block_interface_menu_c_info_block_text">
                             <div className="main__block_interface_menu_c_s flex">

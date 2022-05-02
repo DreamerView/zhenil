@@ -1,5 +1,6 @@
 import { useState,useEffect } from 'react';
 import { useMediaQuery } from 'react-responsive';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [result,setResult] = useState("");
@@ -13,9 +14,11 @@ const Header = () => {
     return(
         <header>
     <div className="header__logo">
+      <Link to="/">
       <div className="header__logo_pic">
         <img loading="lazy" className="header__logo_img" src={process.env.PUBLIC_URL+"/img/logo"+result+".webp"} alt="Logo" />
       </div>
+      </Link>
     </div>
     <div className="header__action">
       <img loading="lazy" className="header__action_avatar" src={process.env.PUBLIC_URL+"/img/3600ABB7-7824-467A-BB26-6E86CDD1EC91.webp"} alt="" />
