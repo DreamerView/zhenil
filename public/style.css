@@ -39,19 +39,20 @@ p.sub_content {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --background-color:#1b1b1d;
+        --background-color:hsl(240, 3%, 11%);
         --block-color: hsl(240, 2%, 18%);
         --menu-color:hsl(240, 2%, 18%);
         --menu-border-color:hsl(240, 2%, 18%);
-        --menu-font-color:#7d7aff;
+        --menu-font-color:hsl(241, 100%, 74%);
         --input_back:hsl(240, 2%, 18%);
         --nav_block:hsl(240, 3%, 9%);
         --font-color:hsl(0, 0%, 100%);
-        --brand-color:#7d7aff;
+        --brand-color:hsl(241, 100%, 74%);
         --sub_content:hsla(240, 33%, 94%, 0.6);
         --green_back:hsl(129, 67%, 52%);
         --purple_back:hsl(280, 85%, 65%);
         --blue_back:hsl(210, 100%, 52%);
+        --red_back:hsl(349, 100%, 59%);
         --input_back_text:hsla(240, 33%, 94%,.6);
         --input_border:transparent;
         --border-color:hsl(240, 1%, 30%);
@@ -63,7 +64,7 @@ p.sub_content {
         --background-color:hsl(0, 0%, 100%);
         --block-color:hsl(220, 13%, 95%);
         --menu-color:hsl(248, 57%, 59%);
-        --menu-border-color:#6b5bd2;
+        --menu-border-color:hsl(248, 57%, 59%);
         --menu-font-color:hsl(0, 0%, 100%);
         --input_back:hsl(0, 0%, 100%);
         --nav_block:hsl(0, 0%, 98%);
@@ -73,6 +74,7 @@ p.sub_content {
         --green_back: hsl(135, 59%, 49%);
         --purple_back:hsl(280, 68%, 60%);
         --blue_back: hsl(211, 100%, 50%);
+        --red_back:hsl(349, 100%, 59%);
         --input_back_text:hsl(206, 7%, 58%);
         --input_border:hsl(195, 13%, 94%);
         --border-color:hsl(216, 10%, 90%);
@@ -85,6 +87,7 @@ p.sub_content {
         --m-1: 30px 150px;
         --m-2: 74px 150px;
         --n-1: 16px 150px;
+        --p:60px;
         --n-b: var(--border-color);
         --i-s: 0 60px;
         --display: flex;
@@ -113,6 +116,7 @@ p.sub_content {
         --m-1: 30px 50px;
         --m-2: 66px 50px;
         --n-1: 24px 50px;
+        --p:60px;
         --n-b: var(--border-color);
         --i-s: 0 60px;
         --display: flex;
@@ -141,6 +145,7 @@ p.sub_content {
         --m-1: 30px 32px;
         --m-2: 74px 32px;
         --n-1: 16px 32px;
+        --p:60px;
         --n-b: var(--border-color);
         --i-s: 0 60px;
         --display: flex;
@@ -175,6 +180,7 @@ p.sub_content {
         --m-1: 30px 16px;
         --m-2: 54px 16px;
         --n-1: 16px 16px;
+        --p:48px;
         --n-b: transparent;
         --i-s: 0 24px 0 52px;
         --display: flex;

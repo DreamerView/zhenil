@@ -58,8 +58,8 @@ const SizeAcc = () => {
 
                     </div>
                     
-                    <div className="main__block_interface_menu_c flex">
-                        <button className="main__block_interface_btn_back">Пропустить</button>
+                    <div className="main__block_interface_menu_c_end flex">
+                        <Link to="/logo" className="main__block_interface_btn_back_red">Назад</Link>
                         {/* <button className="main__block_interface_btn_forward">Продолжить</button> */}
                         <Link to="/info" className="main__block_interface_btn_forward">Продолжить</Link>
                         

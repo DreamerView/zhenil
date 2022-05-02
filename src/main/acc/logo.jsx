@@ -24,8 +24,8 @@ const LogoAcc = () => {
                         <input style={{display:'none'}} name="logoPreview" id="logoPreview" accept="image/*" type='file' onChange={(event)=>{setLogo(URL.createObjectURL(event.target.files[0]));setReady(true)}} />
                         <img className="main__block_interface_menu_logo_img" src={logo} alt="logo" />
                     </div>
-                    <div className="main__block_interface_menu_c flex">
-                        <button className="main__block_interface_btn_back">Пропустить</button>
+                    <div className="main__block_interface_menu_c_end flex">
+                        <Link to="/size" className="main__block_interface_btn_back">Пропустить</Link>
                         {!ready ? <button className="main__block_interface_btn_forward">Продолжить</button>: <Link to="/size" className="main__block_interface_btn_forward">Продолжить</Link>}
                         
                     </div>
