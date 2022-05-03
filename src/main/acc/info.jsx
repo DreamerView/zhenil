@@ -43,7 +43,7 @@ const InfoAcc = () => {
                     </div>
                     <div className="main__block_interface_menu_c_end flex">
                         <Link to="/size" className="main__block_interface_btn_back_red">Назад</Link>
-                        {!ready ? <button className="main__block_interface_btn_forward">Продолжить</button>: <Link to="/size" className="main__block_interface_btn_forward">Продолжить</Link>}
+                        {!ready ? <button className="main__block_interface_btn_forward">Продолжить</button>: <Link to="/result" className="main__block_interface_btn_forward">Продолжить</Link>}
                         
                     </div>
                 </div>

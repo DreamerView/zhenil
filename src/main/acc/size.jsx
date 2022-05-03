@@ -11,7 +11,7 @@ const SizeAcc = () => {
                 <p><b className="b-color">Home /</b> Books</p>
             </div>
             <div className="main__block">
-                <h3>[Этап 2/4] Конструктор бейджиков/аккредитации</h3>
+                <h3>[Этап 2/4] Выбор ориентации и размер бумаги</h3>
                 <p className="sub_content">Этап 2/4. Выберите ориентацию и размер вашей бумаги</p>
                 <div className="main__block_interface_menu c-m">
                     <div className="main__block_interface_menu_c">

@@ -404,4 +404,7 @@ svg.main__preloader_pic {
     width: 100px;
     height: 100px;
 }
+/*  */
+#frame { transform: scale(0.75); }
+
 
