@@ -1,16 +1,13 @@
-import { useState,useEffect } from 'react';
+import { useState,useMemo } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [result,setResult] = useState("");
   const checkMode = useMediaQuery({query:'(prefers-color-scheme: dark)'});
-  useEffect(()=>{
+  useMemo(()=>{
         checkMode===true?setResult("-night"):setResult("");
   },[checkMode])
-  useEffect(()=>{
-    console.log('Rendered')
-  },[])
     return(
         <header>
     <div className="header__logo">

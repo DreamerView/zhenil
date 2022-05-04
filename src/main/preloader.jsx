@@ -1,10 +1,10 @@
-import { useState,useEffect } from 'react';
+import { useState,memo,useMemo} from 'react';
 import { useMediaQuery } from 'react-responsive';
 
 const Preloader = () => {
     const [result,setResult] = useState("#4634bc");
     const checkMode = useMediaQuery({query:'(prefers-color-scheme: dark)'});
-    useEffect(()=>{
+    useMemo(()=>{
         checkMode===true?setResult("#7d7aff"):setResult("#4634bc");
     },[checkMode])
     return(
@@ -16,4 +16,4 @@ const Preloader = () => {
     )
 };
 
-export default Preloader
+export default memo(Preloader);
