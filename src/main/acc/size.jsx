@@ -1,9 +1,57 @@
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import { Link } from "react-router-dom";
 import './acc.css'
 
 const SizeAcc = () => {
-    const [select,setSelect] = useState(true);
+    const [select,setSelect] = useState(false);
+    const [checked,setChecked] = useState('')
+    const [result,setResult] = useState('Choose-origin');
+    const [ss,setSS] = useState('Choose-origin');
+    const [cc,setCC] = useState(false)
+    const [orient] = useState(localStorage.getItem('orient_acc'))
+    const [ready,setReady] = useState(false);
+    const [width,setWidth] = useState('Введите ширину');
+    const [height,setHeight] = useState('Введите высоту')
+    const Check = (e) => {
+        localStorage.setItem('orient_acc',e);
+        setChecked(true);
+    }
+    const Check1 = (e) => {
+        localStorage.setItem('template_acc',e);
+        if(e==='ready') {
+            setCC(false);
+            localStorage.removeItem('get_ss_acc');
+            localStorage.removeItem('width_acc');
+            localStorage.removeItem('height_acc');
+            setReady(false);
+        }
+    }
+    const Check2 = (e) => {
+        localStorage.setItem('get_ss_acc',e);
+    }
+    useEffect(() => {
+        if(localStorage.getItem('orient_acc')) {
+            setChecked(true);
+            console.log('yes')
+        }
+    }, [])
+    useEffect(()=>{
+        if(localStorage.getItem('template_acc')) {
+            setResult(localStorage.getItem('template_acc'))
+            setCC(false);
+        }
+        if(localStorage.getItem('get_ss_acc')) {
+            setSS(localStorage.getItem('get_ss_acc'));
+            setCC(true);
+        }
+        if(localStorage.getItem('width_acc')) {
+            setWidth(localStorage.getItem('width_acc'));
+        }
+        if(localStorage.getItem('height_acc')) {
+            setHeight(localStorage.getItem('height_acc'));
+            setReady(true);
+        }  
+    },[])
     return(
     <>
         <>
@@ -18,9 +66,9 @@ const SizeAcc = () => {
                         <h1>Выбор ориентации бумаги</h1>
                     </div>
 
-                    <div className="main__block_interface_menu_c flex">
+                    <div className="main__block_interface_menu_c flex" onChange={(event)=>Check(event.target.value)}>
                         <label className="main__block_i_l">
-                            <input type="radio" name="choice" id="bookChoice" />
+                            <input type="radio" name="choice" value="book" id="bookChoice" defaultChecked={'book'===orient} />
                             <div className="main__block_interface_menu_c_book choice_land">
                                 <div className="main__block_interface_menu_c_book_block"></div>
                                 <span>Книжная</span>
@@ -28,7 +76,7 @@ const SizeAcc = () => {
                         </label>
                         
                         <label className="main__block_i_l">
-                            <input type="radio" name="choice" id="albumChoice" />
+                            <input type="radio" name="choice" value="album" id="albumChoice" defaultChecked={'album'===orient}  />
                             <div className="main__block_interface_menu_c_album choice_land">
                                 <div className="main__block_interface_menu_c_album_block"></div>
                                 <span>Альбомная</span>
@@ -36,33 +84,42 @@ const SizeAcc = () => {
                         </label>
                         
                     </div>
-
                     <div className="main__block_interface_menu_c">
-                        <select defaultValue="Choose-origin" onChange={()=>setSelect(false)} className="main__block_interface_menu_c_select" name="" id="">
+                    <div>
+                    {checked?
+                        <select defaultValue={result} onChange={(e)=>{setResult(e.target.value);Check1(e.target.value);setSelect(false);}} className="main__block_interface_menu_c_select" name="" id="">
+                            <option defaultValue="Choose-origin" disabled>Выберите шаблон</option>
+                            <option value="ready">Готовые размеры</option>
+                            <option value="selectable">Настраиваемый размер</option>
+                        </select>:''}
+                    </div>
+                        {result==='selectable'?
+                        <select defaultValue={ss} onChange={(e)=>{setSelect(true);Check2(e.target.value)}} className="main__block_interface_menu_c_select" name="" id="">
                             <option value="Choose-origin" disabled>Выберите единицу измерения</option>
                             <option value="sm">Сантиментр (см)</option>
                             <option value="dm">Дециметр (дм)</option>
                             <option value="pix">Пискель (pix)</option>
-                        </select>
-                        {!select?<>
+                        </select>:''}
+                        {!result==='ready'||(select||cc)?<>
                             <div className="main__block_interface_menu_c_s flex">
-                                <input disabled={select} className="main__block_interface_menu_c_s_i" placeholder="Введите ширину" type="text" name="" id="" />
+                                <input className="main__block_interface_menu_c_s_i" onChange={(e)=>{localStorage.setItem('width_acc',e.target.value)}} placeholder={width} type="text" name="" id="" />
                                 <span className="main__block_interface_menu_c_s_t">Ширина</span>
                             </div>
                             <div className="main__block_interface_menu_c_s flex">
-                                <input disabled={select} className="main__block_interface_menu_c_s_i" placeholder="Введите высоту" type="text" name="" id="" />
+                                <input className="main__block_interface_menu_c_s_i" onChange={(e)=>{localStorage.setItem('height_acc',e.target.value);setReady(true);}} placeholder={height} type="text" name="" id="" />
                                 <span className="main__block_interface_menu_c_s_t">Высота</span>
                             </div>
                         </>:''}
 
                     </div>
-                    
+                    {ready ?
                     <div className="main__block_interface_menu_c_end flex">
                         <Link to="/logo" className="main__block_interface_btn_back_red">Назад</Link>
                         {/* <button className="main__block_interface_btn_forward">Продолжить</button> */}
                         <Link to="/info" className="main__block_interface_btn_forward">Продолжить</Link>
                         
                     </div>
+                    :''}
                 </div>
             </div>
         </>

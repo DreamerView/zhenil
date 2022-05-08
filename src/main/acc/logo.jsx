@@ -1,10 +1,26 @@
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import {Link} from 'react-router-dom';
 import './acc.css'
 
 const LogoAcc = () => {
     const [logo,setLogo] = useState(process.env.PUBLIC_URL+"/img/logo_round.svg");
     const [ready,setReady] = useState(false);
+    const CheckLogo = (event) => {
+        let reader = new FileReader();
+        let baseString;
+        reader.onloadend = function () {
+            baseString = reader.result;
+            console.log(baseString);
+            localStorage.setItem('logo_acc',baseString);
+        };
+        reader.readAsDataURL(event);
+    }
+    useEffect(()=>{
+        if(localStorage.getItem('logo_acc')) {
+            setLogo(localStorage.getItem('logo_acc'));
+            setReady(true);
+        };
+    },[])
     return(
         <>
             <div className="main__nav">
@@ -21,7 +37,7 @@ const LogoAcc = () => {
                         <label htmlFor="logoPreview">
                             <img className="main__block_interface_menu_logo_icon_img" src={process.env.PUBLIC_URL+"/img/add_a_photo.svg" } alt="icon" />
                         </label>
-                        <input style={{display:'none'}} name="logoPreview" id="logoPreview" accept="image/*" type='file' onChange={(event)=>{setLogo(URL.createObjectURL(event.target.files[0]));setReady(true)}} />
+                        <input style={{display:'none'}} name="logoPreview" id="logoPreview" accept="image/*" type='file' onChange={(event)=>{setLogo(URL.createObjectURL(event.target.files[0]));CheckLogo(event.target.files[0]);setReady(true)}} />
                         <img className="main__block_interface_menu_logo_img" src={logo} alt="logo" />
                     </div>
                     <div className="main__block_interface_menu_c_end flex">
