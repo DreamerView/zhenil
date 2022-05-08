@@ -4,26 +4,18 @@
 }
 
 h1 {
-    font-size:34px;
-    line-height:52px;
-}
-h2 {
-    font-size:28px;
-    line-height:43px;
-}
-h3 {
     font-size:22px;
     line-height:34px;
 }
-h4 {
+h2 {
     font-size:20px;
     line-height:31px;
 }
-h5 {
+h3 {
     font-size:17px;
     line-height:27px;
 }
-h6 {
+h4 {
     font-size:16px;
     line-height:25px;
 }
@@ -35,6 +27,17 @@ p {
 p.sub_content {
     color: var(--sub_content);
     margin-top:20px;
+}
+
+p.nav {
+    font-size:14px;
+    line-height:23px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+p.nav > a {
+    opacity: 0.5;
 }
 
 @media (prefers-color-scheme: dark) {
