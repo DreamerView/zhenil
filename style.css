@@ -30,8 +30,8 @@ p.sub_content {
 }
 
 p.nav {
-    font-size:14px;
-    line-height:23px;
+    font-size:16px;
+    line-height:25px;
     display: flex;
     flex-wrap: wrap;
 }
