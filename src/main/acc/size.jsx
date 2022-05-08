@@ -8,14 +8,14 @@ const SizeAcc = () => {
     <>
         <>
             <div className="main__nav">
-                <p><b className="b-color">Home /</b> Books</p>
+                <p className="nav"><b className="b-color">Главная  /</b>  <Link to="/">Конструктор бейджиков /</Link>  <Link to="/logo">Логотип /</Link>  Размер</p>
             </div>
             <div className="main__block">
-                <h3>[Этап 2/4] Выбор ориентации и размер бумаги</h3>
+                <h1>[Этап 2/4] Выбор ориентации и размер бумаги</h1>
                 <p className="sub_content">Этап 2/4. Выберите ориентацию и размер вашей бумаги</p>
                 <div className="main__block_interface_menu c-m">
                     <div className="main__block_interface_menu_c">
-                        <h3>Выбор ориентации бумаги</h3>
+                        <h1>Выбор ориентации бумаги</h1>
                     </div>
 
                     <div className="main__block_interface_menu_c flex">

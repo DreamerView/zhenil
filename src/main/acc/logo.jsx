@@ -8,14 +8,14 @@ const LogoAcc = () => {
     return(
         <>
             <div className="main__nav">
-                <p><b className="b-color">Home /</b> Books</p>
+                <p className="nav"><b className="b-color">Главная  /</b>  <Link to="/">Конструктор бейджиков /</Link>  Логотип</p>
             </div>
             <div className="main__block">
-                <h3>[Этап 1/4] Загрузка логотипа</h3>
+                <h1>[Этап 1/4] Загрузка логотипа</h1>
                 <p className="sub_content">Этап 1/4. Загрузите ваш логотип организации/компаний</p>
                 <div className="main__block_interface_menu c-m">
                     <div className="main__block_interface_menu_c">
-                        <h3>Загрузка логотипа</h3>
+                        <h1>Загрузка логотипа</h1>
                     </div>
                     <div className="main__block_interface_menu_c">
                         <label htmlFor="logoPreview">

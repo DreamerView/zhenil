@@ -8,14 +8,14 @@ const InfoAcc = () => {
     return(
         <div>
             <div className="main__nav">
-                <p><b className="b-color">Home /</b> Books</p>
+            <p className="nav"><b className="b-color">Главная  /</b>  <Link to="/">Конструктор бейджиков /</Link>  <Link to="/logo">Логотип /</Link>  <Link to="/size">Размер /</Link>  Информация</p>
             </div>
             <div className="main__block">
-                <h3>[Этап 3/4] Заполнение информации</h3>
+                <h1>[Этап 3/4] Заполнение информации</h1>
                 <p className="sub_content">Этап 3/4. Заполните все необходимые информации о пользователе</p>
                 <div className="main__block_interface_menu c-m">
                     <div className="main__block_interface_menu_c">
-                        <h3>Заполнение информации</h3>
+                        <h1>Заполнение информации</h1>
                     </div>
                     <div className="main__block_interface_menu_c_info_block">
                         <div className="main__block_interface_menu_c_info_block_avatar">

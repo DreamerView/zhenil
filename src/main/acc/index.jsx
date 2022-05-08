@@ -5,10 +5,10 @@ const Acc = () => {
     return(
       <>
         <div className="main__nav">
-            <p><b className="b-color">Главная /</b> Конструктор</p>
+            <p className="nav"><b className="b-color">Главная  /</b>  Конструктор бейджиков</p>
         </div>
         <div className="main__block">
-            <h3>Конструктор бейджиков/аккредитации</h3>
+            <h1>Конструктор бейджиков/аккредитации</h1>
             <p className="sub_content">Выберите на сколько людей нужно будет это сделать?</p>
             <div className="main__block_menu_select p-m">
             <div className="main__block_menu_select_block green_back">
@@ -17,7 +17,7 @@ const Acc = () => {
                 <img className="main__block_menu_select_block_icon_img" loading="lazy" src={process.env.PUBLIC_URL+"/img/person.svg"} alt="icon"/>
             </div>
             <div className="main__block_menu_select_main">
-                <h4>Для одного человека</h4>
+                <h2>Для одного человека</h2>
             </div>
             <div className="main__block_menu_select_main">
                 <p className="main__block_menu_select_main_p">Нужно для одного человека? Не беда, просто используйте наш удобный конструктор и создавайте</p>
@@ -34,7 +34,7 @@ const Acc = () => {
                 <img className="main__block_menu_select_block_icon_img" loading="lazy" src={process.env.PUBLIC_URL+"/img/group.svg"} alt="icon"/>
             </div>
             <div className="main__block_menu_select_main">
-                <h4>Для несколько людей</h4>
+                <h2>Для несколько людей</h2>
             </div>
             <div className="main__block_menu_select_main">
                 <p className="main__block_menu_select_main_p">Нужно для несколько людей? Не беда, просто используйте наш удобный конструктор и создавайте</p>
@@ -51,7 +51,7 @@ const Acc = () => {
                 <img className="main__block_menu_select_block_icon_img" loading="lazy" src={process.env.PUBLIC_URL+"/img/help.svg"} alt="icon"/>
             </div>
             <div className="main__block_menu_select_main">
-                <h4>Инфографика</h4>
+                <h2>Инфографика</h2>
             </div>
             <div className="main__block_menu_select_main">
                 <p className="main__block_menu_select_main_p">Хотите подробно узнать как можно использовать конструктор?</p>
