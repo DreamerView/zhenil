@@ -7,7 +7,8 @@ const InfoAcc = () => {
     const [ready,setReady] = useState(false);
     const [name,setName] = useState('Введите имя');
     const [surname,setSurname] = useState('Введите фамилию');
-    const [status,setStatus] = useState('Необзязательное поле')
+    const [status,setStatus] = useState('Необзязательное поле');
+    const [info,setInfo] = useState('');
     const CheckAvatar = (event) => {
         let reader = new FileReader();
         let baseString;
@@ -15,18 +16,24 @@ const InfoAcc = () => {
             baseString = reader.result;
             console.log(baseString);
             localStorage.setItem('avatar_acc',baseString);
+            setInfo({...info,avatar:baseString})
         };
         reader.readAsDataURL(event);
     }
     useEffect(()=>{
-        if(localStorage.getItem('avatar_acc')) {
-            setLogo(localStorage.getItem('avatar_acc'));
+        let s = JSON.parse(localStorage.getItem('check_massive'));
+        if(s) {
+            setLogo(s[0].avatar);
+            setName(s[0].name);
+            setSurname(s[0].surname);
+            setStatus(s[0].status);
             setReady(true);
-        };
-        if(localStorage.getItem('person_name_acc')) setName(localStorage.getItem('person_name_acc'));
-        if(localStorage.getItem('person_surname_acc')) setSurname(localStorage.getItem('person_surname_acc'));
-        if(localStorage.getItem('person_status_acc')) setStatus(localStorage.getItem('person_status_acc'));
-    },[])
+        }
+    },[]);
+    useEffect(()=>{
+        if(info==='') return;
+        else localStorage.setItem('check_massive',JSON.stringify([info]));
+    },[info]);
     return(
         <div>
             <div className="main__nav">
@@ -50,15 +57,15 @@ const InfoAcc = () => {
                         </div>
                         <div className="main__block_interface_menu_c_info_block_text">
                             <div className="main__block_interface_menu_c_s flex">
-                                <input className="main__block_interface_menu_c_s_i" placeholder={name} onChange={(e)=>{localStorage.setItem('person_name_acc',e.target.value)}} type="text" name="" id="" />
+                                <input className="main__block_interface_menu_c_s_i" placeholder={name} onChange={(e)=>{setInfo({...info,id:1,name:e.target.value})}} type="text" name="" id="" />
                                 <span className="main__block_interface_menu_c_s_t">Имя</span>
                             </div>
                             <div className="main__block_interface_menu_c_s flex">
-                                <input className="main__block_interface_menu_c_s_i" placeholder={surname} onChange={(e)=>{localStorage.setItem('person_surname_acc',e.target.value)}} type="text" name="" id="" />
+                                <input className="main__block_interface_menu_c_s_i" placeholder={surname} onChange={(e)=>{setInfo({...info,surname:e.target.value})}} type="text" name="" id="" />
                                 <span className="main__block_interface_menu_c_s_t">Фамилия</span>
                             </div>
                             <div className="main__block_interface_menu_c_s flex">
-                                <input className="main__block_interface_menu_c_s_i" placeholder={status} onChange={(e)=>{localStorage.setItem('person_status_acc',e.target.value)}} type="text" name="" id="" />
+                                <input className="main__block_interface_menu_c_s_i" placeholder={status} onChange={(e)=>{setInfo({...info,status:e.target.value})}} type="text" name="" id="" />
                                 <span className="main__block_interface_menu_c_s_t">Должность</span>
                             </div>
                         </div>

@@ -88,7 +88,7 @@ const SizeAcc = () => {
                     <div>
                     {checked?
                         <select defaultValue={result} onChange={(e)=>{setResult(e.target.value);Check1(e.target.value);setSelect(false);}} className="main__block_interface_menu_c_select" name="" id="">
-                            <option defaultValue="Choose-origin" disabled>Выберите шаблон</option>
+                            <option value="Choose-origin" disabled>Выберите шаблон</option>
                             <option value="ready">Готовые размеры</option>
                             <option value="selectable">Настраиваемый размер</option>
                         </select>:''}
@@ -98,7 +98,7 @@ const SizeAcc = () => {
                             <option value="Choose-origin" disabled>Выберите единицу измерения</option>
                             <option value="sm">Сантиментр (см)</option>
                             <option value="dm">Дециметр (дм)</option>
-                            <option value="pix">Пискель (pix)</option>
+                            <option value="px">Пискель (pix)</option>
                         </select>:''}
                         {!result==='ready'||(select||cc)?<>
                             <div className="main__block_interface_menu_c_s flex">
