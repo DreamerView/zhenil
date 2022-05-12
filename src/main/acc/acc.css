@@ -379,7 +379,7 @@ div.main__block_interface_menu_c_info_block_avatar {
 }
 @media (min-width:1px) and (max-width:600px) and (display-mode: standalone) {
     div.main__block_fixed_confirm {
-        padding-bottom:40px;
+        padding:20px 0;
     }
 }
 div.main__block_fixed_confirm {
