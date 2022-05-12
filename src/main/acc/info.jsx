@@ -31,6 +31,16 @@ const InfoAcc = () => {
         }
     },[]);
     useEffect(()=>{
+        if(localStorage.getItem('check_massive')) {
+            let l = JSON.parse(localStorage.getItem('check_massive')).length;
+            console.log(l);
+            setInfo(JSON.parse(localStorage.getItem('check_massive'))[0]);
+        }
+        else {
+            setInfo('');
+        }
+    },[]);
+    useEffect(()=>{
         if(info==='') return;
         else localStorage.setItem('check_massive',JSON.stringify([info]));
     },[info]);
@@ -57,7 +67,7 @@ const InfoAcc = () => {
                         </div>
                         <div className="main__block_interface_menu_c_info_block_text">
                             <div className="main__block_interface_menu_c_s flex">
-                                <input className="main__block_interface_menu_c_s_i" placeholder={name} onChange={(e)=>{setInfo({...info,id:1,name:e.target.value})}} type="text" name="" id="" />
+                                <input className="main__block_interface_menu_c_s_i" placeholder={name} onChange={(e)=>{setInfo({...info,id:0,name:e.target.value})}} type="text" name="" id="" />
                                 <span className="main__block_interface_menu_c_s_t">Имя</span>
                             </div>
                             <div className="main__block_interface_menu_c_s flex">
@@ -71,10 +81,16 @@ const InfoAcc = () => {
                         </div>
                     </div>
                     <div className="main__block_interface_menu_c_end flex">
-                        <Link to="/size" className="main__block_interface_btn_back_red">Назад</Link>
-                        {!ready ? <button className="main__block_interface_btn_forward">Продолжить</button>: <Link to="/result" className="main__block_interface_btn_forward">Продолжить</Link>}
+                        <Link to="/size" className="main__block_interface_btn_back_red">Удалить</Link>
+                        {!ready ? <button className="main__block_interface_btn_forward">Сохранить</button>: <Link to="/result" className="main__block_interface_btn_forward">Сохранить</Link>}
                         
                     </div>
+                </div>
+            </div>
+            <div className="main__block_fixed_confirm">
+                <div className="main__block_interface_menu_c_end flex">
+                            <Link to="/size" className="main__block_interface_btn_back">Назад</Link>
+                            {!ready ? <button className="main__block_interface_btn_forward">Завершить?</button>: <Link to="/result" className="main__block_interface_btn_forward">Завершить?</Link>}    
                 </div>
             </div>
         </div>

@@ -54,7 +54,6 @@ const SizeAcc = () => {
     },[])
     return(
     <>
-        <>
             <div className="main__nav">
                 <p className="nav"><b className="b-color">Главная  /</b>  <Link to="/">Конструктор бейджиков /</Link>  <Link to="/logo">Логотип /</Link>  Размер</p>
             </div>
@@ -112,17 +111,15 @@ const SizeAcc = () => {
                         </>:''}
 
                     </div>
-                    {ready ?
-                    <div className="main__block_interface_menu_c_end flex">
-                        <Link to="/logo" className="main__block_interface_btn_back_red">Назад</Link>
-                        {/* <button className="main__block_interface_btn_forward">Продолжить</button> */}
-                        <Link to="/info" className="main__block_interface_btn_forward">Продолжить</Link>
-                        
-                    </div>
-                    :''}
+                    
                 </div>
             </div>
-        </>
+            <div className="main__block_fixed_confirm">
+                <div className="main__block_interface_menu_c_end flex">
+                            <Link to="/logo" className="main__block_interface_btn_back">Назад</Link>
+                            {!ready ? <button className="main__block_interface_btn_forward">Продолжить</button>: <Link to="/info" className="main__block_interface_btn_forward">Продолжить</Link>}    
+                </div>
+            </div>
     </>
     );
 }

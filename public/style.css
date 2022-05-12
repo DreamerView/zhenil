@@ -280,6 +280,16 @@ b.b-color {
     color:var(--brand-color);
     cursor:pointer;
 }
+span.logo {
+    width: 300px;
+    color:var(--sub_content);
+    text-align: center;
+}
+span.logo_s {
+    font-weight: 700;
+    color:var(--green_back);
+    text-align: center;
+}
 
 
 header {

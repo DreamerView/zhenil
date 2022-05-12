@@ -4,6 +4,7 @@ import './acc.css'
 
 const LogoAcc = () => {
     const [logo,setLogo] = useState(process.env.PUBLIC_URL+"/img/logo_round.svg");
+    const [c,setC] = useState({logo:'logo',text:"* Выберите файл и загрузите ваш логотип пожалуйста"});
     const [ready,setReady] = useState(false);
     const CheckLogo = (event) => {
         let reader = new FileReader();
@@ -12,6 +13,7 @@ const LogoAcc = () => {
             baseString = reader.result;
             console.log(baseString);
             localStorage.setItem('logo_acc',baseString);
+            setC({logo:'logo_s',text:'Логотип загружен ✔'});
         };
         reader.readAsDataURL(event);
     }
@@ -19,6 +21,7 @@ const LogoAcc = () => {
         if(localStorage.getItem('logo_acc')) {
             setLogo(localStorage.getItem('logo_acc'));
             setReady(true);
+            setC({logo:'logo_s',text:'Логотип загружен ✔'});
         };
     },[])
     return(
@@ -40,11 +43,20 @@ const LogoAcc = () => {
                         <input style={{display:'none'}} name="logoPreview" id="logoPreview" accept="image/*" type='file' onChange={(event)=>{setLogo(URL.createObjectURL(event.target.files[0]));CheckLogo(event.target.files[0]);setReady(true)}} />
                         <img className="main__block_interface_menu_logo_img" src={logo} alt="logo" />
                     </div>
-                    <div className="main__block_interface_menu_c_end flex">
+                    <div className="main__block_interface_menu_c_end">
+                        <span className={c.logo}>{c.text}</span>
+                    </div>
+                    {/* <div className="main__block_interface_menu_c_end flex">
                         <Link to="/size" className="main__block_interface_btn_back">Пропустить</Link>
                         {!ready ? <button className="main__block_interface_btn_forward">Продолжить</button>: <Link to="/size" className="main__block_interface_btn_forward">Продолжить</Link>}
                         
-                    </div>
+                    </div> */}
+                </div>
+            </div>
+            <div className="main__block_fixed_confirm">
+                <div className="main__block_interface_menu_c_end flex">
+                            <Link to="/size" className="main__block_interface_btn_back">Пропустить</Link>
+                            {!ready ? <button className="main__block_interface_btn_forward">Продолжить</button>: <Link to="/size" className="main__block_interface_btn_forward">Продолжить</Link>}    
                 </div>
             </div>
         </>
