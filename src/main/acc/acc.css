@@ -285,6 +285,11 @@ a.main__block_interface_btn_forward {
     color: white;
     cursor: pointer;
     text-decoration: none;
+    animation-name: basic_animation;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
 }
 div.main__block_interface_menu_c_book {
     height:200px;
@@ -294,6 +299,11 @@ div.main__block_interface_menu_c_book {
     align-items: center;
     cursor: pointer;
     border:1.5px solid transparent;
+    animation-name: basic_animation;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
 }
 div.main__block_interface_menu_c_book:hover {
     border-radius: 14px;
@@ -318,6 +328,11 @@ div.main__block_interface_menu_c_album {
     align-items: center;
     cursor: pointer;
     border:1.5px solid transparent;
+    animation-name: basic_animation;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
 }
 div.main__block_interface_menu_c_album_block {
     width: 130px;
@@ -333,6 +348,11 @@ span.main__block_interface_menu_cmain__block_interface_menu_c_book_block_text {
 }
 div.main__block_interface_menu_c_s {
     margin-bottom: 20px;
+    animation-name: basic_animation;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
 }
 span.main__block_interface_menu_c_s_t {
     order:1;
@@ -378,7 +398,11 @@ select.main__block_interface_menu_c_select {
     color:var(--font-color);
     background: url(img/top.svg) no-repeat 95% 50% var(--block-color);
     cursor: pointer;
-
+    animation-name: basic_animation;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
 }
 div.main__block_interface_menu_c_info_block {
     margin-bottom:var(--p);
@@ -401,4 +425,20 @@ div.main__block_fixed_confirm {
     border-radius: 20px 20px 0 0;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
+    animation-name: basic_animation;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    
+}
+@keyframes basic_animation {
+    from {
+      -webkit-transform: scale(0.95);
+      opacity: 0.7;
+    }
+    to {
+      -webkit-transform: scale(1);
+      opacity: 1;
+    }
 }

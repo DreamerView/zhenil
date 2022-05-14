@@ -4,7 +4,7 @@ import './acc.css'
 
 const LogoAcc = () => {
     const [logo,setLogo] = useState(process.env.PUBLIC_URL+"/img/logo_round.svg");
-    const [c,setC] = useState({logo:'logo',text:"* Выберите файл и загрузите ваш логотип пожалуйста"});
+    const [c,setC] = useState({logo:'logo',text:"* Выберите файл и загрузите ваш логотип пожалуйста",div:''});
     const [ready,setReady] = useState(false);
     const CheckLogo = (event) => {
         let reader = new FileReader();
@@ -13,7 +13,7 @@ const LogoAcc = () => {
             baseString = reader.result;
             console.log(baseString);
             localStorage.setItem('logo_acc',baseString);
-            setC({logo:'logo_s',text:'Логотип загружен ✔'});
+            setC({logo:'logo_s',text:'Логотип загружен ✔',div:'alerts_g'});
         };
         reader.readAsDataURL(event);
     }
@@ -21,7 +21,7 @@ const LogoAcc = () => {
         if(localStorage.getItem('logo_acc')) {
             setLogo(localStorage.getItem('logo_acc'));
             setReady(true);
-            setC({logo:'logo_s',text:'Логотип загружен ✔'});
+            setC({logo:'logo_s',text:'Логотип загружен ✔',div:'alerts_g'});
         };
     },[])
     return(
@@ -44,7 +44,9 @@ const LogoAcc = () => {
                         <img className="main__block_interface_menu_logo_img" src={logo} alt="logo" />
                     </div>
                     <div className="main__block_interface_menu_c_end">
-                        <span className={c.logo}>{c.text}</span>
+                        <div className={c.div}>
+                            <span className={c.logo}>{c.text}</span>
+                        </div>
                     </div>
                     {/* <div className="main__block_interface_menu_c_end flex">
                         <Link to="/size" className="main__block_interface_btn_back">Пропустить</Link>

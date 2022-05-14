@@ -282,6 +282,33 @@ b.b-color {
     color:var(--brand-color);
     cursor:pointer;
 }
+div.alerts_g {
+    width: 250px;
+    height:50px;
+    background-color: var(--blue_back);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:27px;
+    animation-name: alerts_g;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes alerts_g {
+    from {
+      -webkit-transform: scale(0.95);
+      opacity: 0.7;
+    }
+    to {
+      -webkit-transform: scale(1);
+      opacity: 1;
+    }
+}
+
 span.logo {
     width: 300px;
     color:var(--sub_content);
@@ -289,8 +316,7 @@ span.logo {
 }
 span.logo_s {
     font-weight: 700;
-    color:var(--green_back);
-    text-align: center;
+    color:white;
 }
 
 
