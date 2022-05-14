@@ -236,52 +236,52 @@ img.main__block_interface_menu_logo_icon_img {
     filter: drop-shadow(5px 5px 20px var(--font-color));
 }
 a.main__block_interface_btn_back {
-    padding-top:17px;
-    width: 172px;
-    height: 41px;
-    border-radius: 29px;
-    border: 1px solid var(--sub_content);
+    padding:16px 27px;
+    display: block;
+    width: auto;
+    height: auto;
+    /* border: 1px solid var(--sub_content); */
+    border-radius: 30px;
     font-weight: bold;
-    font-size: 16px;
-    line-height: 20px;
-    color: var(--sub_content);
+    font-size: 17px;
+    color: white;
     cursor: pointer;
+    text-decoration: none;
+    color:var(--sub_content)
 }
 a.main__block_interface_btn_back_red {
-    padding-top:17px;
-    width: 172px;
-    height: 41px;
-    border-radius: 29px;
+    padding:16px 27px;
+    width: auto;
+    height: auto;
+    border-radius: 30px;
     border: 1px solid var(--red_back);
     font-weight: bold;
     font-size: 16px;
-    line-height: 20px;
     color: var(--red_back);
     cursor: pointer;
 }
 button.main__block_interface_btn_forward {
-    width: 172px;
-    height: 58px;
+    padding:16px 27px;
+    width: auto;
+    height: auto;
     background: var(--green_back);
-    border-radius: 29px;
+    border-radius: 30px;
     font-weight: bold;
-    font-size: 16px;
-    line-height: 21px;
+    font-size: 17px;
     color: white;
     cursor: pointer;
     opacity:60%;
     cursor: not-allowed;
 }
 a.main__block_interface_btn_forward {
-    padding-top:17px;
+    padding:16px 27px;
     display: block;
-    width: 172px;
-    height: 41px;
+    width: auto;
+    height: auto;
     background: var(--green_back);
-    border-radius: 29px;
+    border-radius: 30px;
     font-weight: bold;
-    font-size: 16px;
-    line-height: 21px;
+    font-size: 17px;
     color: white;
     cursor: pointer;
     text-decoration: none;
@@ -395,8 +395,10 @@ div.main__block_fixed_confirm {
     justify-content: center;
     width:100%;
     height:80px;
-    background-color: var(--nav_block);
+    background-color: var(--nav_block_blur);
     position: fixed;
     bottom:0;
     border-radius: 20px 20px 0 0;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
 }
