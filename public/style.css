@@ -234,6 +234,25 @@ p.nav > a {
     }
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--sub_content);
+    border-radius: 15px;
+    opacity: 0.3;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: var(--font-color); 
+    opacity: 1;
+}
+
 
 .flex {
     display: flex;
@@ -247,6 +266,10 @@ p.nav > a {
 
 .disabled {
     cursor: not-allowed;
+}
+
+html {
+    overflow-y: overlay;
 }
 
 body {
