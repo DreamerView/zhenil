@@ -24,6 +24,57 @@ p {
     line-height:25px;
 }
 
+@keyframes basic_animation {
+    from {
+        transform: scale(0.95);
+        opacity: 0.7;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@-webkit-keyframes basic_animation {
+    from {
+        -webkit-transform: scale(0.95);
+        opacity: 0.7;
+    }
+    to {
+        -webkit-transform: scale(1);
+        opacity: 1;
+    }
+}
+@-moz-keyframes basic_animation {
+    from {
+        -moz-transform: scale(0.95);
+        opacity: 0.7;
+    }
+    to {
+        -moz-transform: scale(1);
+        opacity: 1;
+    }
+}
+@-o-keyframes basic_animation {
+    from {
+        -o-transform: scale(0.95);
+        opacity: 0.7;
+    }
+    to {
+        -o-transform: scale(1);
+        opacity: 1;
+    }
+}
+@-ms-keyframes basic_animation {
+    from {
+        -ms-transform: scale(0.95);
+        opacity: 0.7;
+    }
+    to {
+        -ms-transform: scale(1);
+        opacity: 1;
+    }
+}
+
 p.sub_content {
     color: var(--sub_content);
     margin-top:20px;
@@ -314,49 +365,12 @@ div.alerts_g {
     align-items: center;
     justify-content: center;
     border-radius:27px;
-    animation-name: alerts_g;
+    animation-name: basic_animation;
     animation-duration: 0.4s;
     animation-iteration-count: 1;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }
-
-@keyframes alerts_g {
-    from {
-        -webkit-transform: scale(0.95);
-        -moz-transform: scale(0.95);
-        -o-transform: scale(0.95);
-        -ms-transform: scale(0.95);
-        transform: scale(0.95);
-        opacity: 0.7;
-    }
-    to {
-        -webkit-transform: scale(1);
-        -moz-transform: scale(1);
-        -o-transform: scale(1);
-        -ms-transform: scale(1);
-        transform: scale(1);
-        opacity: 1;
-    }
-}
-@-webkit-keyframes alerts_g {
-    from {
-        -webkit-transform: scale(0.95);
-        -moz-transform: scale(0.95);
-        -o-transform: scale(0.95);
-        -ms-transform: scale(0.95);
-        transform: scale(0.95);
-        opacity: 0.7;
-    }
-    to {
-        -webkit-transform: scale(1);
-        -moz-transform: scale(1);
-        -o-transform: scale(1);
-        -ms-transform: scale(1);
-        transform: scale(1);
-        opacity: 1;
-    }
-  }
 
 span.logo {
     width: 300px;
