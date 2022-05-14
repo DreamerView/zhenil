@@ -450,3 +450,21 @@ div.main__block_fixed_confirm {
         opacity: 1;
     }
 }
+@-webkit-keyframes basic_animation {
+    from {
+        -webkit-transform: scale(0.95);
+        -moz-transform: scale(0.95);
+        -o-transform: scale(0.95);
+        -ms-transform: scale(0.95);
+        transform: scale(0.95);
+        opacity: 0.7;
+    }
+    to {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -o-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+  }
