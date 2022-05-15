@@ -424,6 +424,16 @@ div.main__block_interface_menu_c_info_block_avatar {
     text-align: center;
 }
 
+div.main__block_menu_close {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 var(--m-p) 0;
+}
+
+div.main__block_menu_close > svg {
+    cursor: pointer;
+}
+
 div.main__block_fixed_confirm {
     display: flex;
     justify-content: center;
