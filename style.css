@@ -194,6 +194,7 @@ p.nav > a {
         --m-1: 30px 150px;
         --m-2: 74px 150px;
         --n-1: 16px 150px;
+        --m-p:40px 20px;
         --p:60px;
         --n-b: var(--border-color);
         --i-s: 0 60px;
@@ -223,6 +224,7 @@ p.nav > a {
         --m-1: 30px 50px;
         --m-2: 66px 50px;
         --n-1: 24px 50px;
+        --m-p: 40px 20px;
         --p:60px;
         --n-b: var(--border-color);
         --i-s: 0 60px;
@@ -252,6 +254,7 @@ p.nav > a {
         --m-1: 30px 32px;
         --m-2: 74px 32px;
         --n-1: 16px 32px;
+        --m-p: 32px 32px;
         --p:60px;
         --n-b: var(--border-color);
         --i-s: 0 60px;
@@ -287,6 +290,7 @@ p.nav > a {
         --m-1: 30px 16px;
         --m-2: 54px 16px;
         --n-1: 16px 16px;
+        --m-p: 0 32px;
         --p:48px;
         --n-b: transparent;
         --i-s: 0 24px 0 52px;
@@ -410,7 +414,7 @@ b.b-color {
 div.alerts_g {
     width: 250px;
     height:50px;
-    background-color: var(--blue_back);
+    background-color: var(--green_back);
     margin: 0 auto;
     display: flex;
     align-items: center;
