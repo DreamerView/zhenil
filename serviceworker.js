@@ -29,8 +29,6 @@ self.addEventListener('fetch', (event) => {
 });
 async function cacheFirst(req) {
     const cached = await caches.match(req)
-    return cached ?? await fetch(req).then((e)=>{
-        if(e.status < 200) caches.match('offline.html');
-    }).catch((e)=>caches.match('offline.html'))
+    return cached ?? await fetch(req).catch(()=>caches.match('offline.html'))
 }
 
