@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/zhenil/static/js/main.c1ee9828.js",
+    "main.js": "/zhenil/static/js/main.977dc20f.js",
     "static/css/551.93672a1f.chunk.css": "/zhenil/static/css/551.93672a1f.chunk.css",
     "static/js/551.d9d603e3.chunk.js": "/zhenil/static/js/551.d9d603e3.chunk.js",
     "static/css/552.93672a1f.chunk.css": "/zhenil/static/css/552.93672a1f.chunk.css",
@@ -8,12 +8,12 @@
     "static/css/266.93672a1f.chunk.css": "/zhenil/static/css/266.93672a1f.chunk.css",
     "static/js/266.78ed342b.chunk.js": "/zhenil/static/js/266.78ed342b.chunk.js",
     "static/css/825.93672a1f.chunk.css": "/zhenil/static/css/825.93672a1f.chunk.css",
-    "static/js/825.d353eccb.chunk.js": "/zhenil/static/js/825.d353eccb.chunk.js",
+    "static/js/825.ce764636.chunk.js": "/zhenil/static/js/825.ce764636.chunk.js",
     "static/js/269.08cbfebf.chunk.js": "/zhenil/static/js/269.08cbfebf.chunk.js",
     "static/js/787.0bd6f522.chunk.js": "/zhenil/static/js/787.0bd6f522.chunk.js",
     "index.html": "/zhenil/index.html",
     "static/media/top.svg": "/zhenil/static/media/top.328459b25f66f2c25f91.svg",
-    "main.c1ee9828.js.map": "/zhenil/static/js/main.c1ee9828.js.map",
+    "main.977dc20f.js.map": "/zhenil/static/js/main.977dc20f.js.map",
     "551.93672a1f.chunk.css.map": "/zhenil/static/css/551.93672a1f.chunk.css.map",
     "551.d9d603e3.chunk.js.map": "/zhenil/static/js/551.d9d603e3.chunk.js.map",
     "552.93672a1f.chunk.css.map": "/zhenil/static/css/552.93672a1f.chunk.css.map",
@@ -21,11 +21,11 @@
     "266.93672a1f.chunk.css.map": "/zhenil/static/css/266.93672a1f.chunk.css.map",
     "266.78ed342b.chunk.js.map": "/zhenil/static/js/266.78ed342b.chunk.js.map",
     "825.93672a1f.chunk.css.map": "/zhenil/static/css/825.93672a1f.chunk.css.map",
-    "825.d353eccb.chunk.js.map": "/zhenil/static/js/825.d353eccb.chunk.js.map",
+    "825.ce764636.chunk.js.map": "/zhenil/static/js/825.ce764636.chunk.js.map",
     "269.08cbfebf.chunk.js.map": "/zhenil/static/js/269.08cbfebf.chunk.js.map",
     "787.0bd6f522.chunk.js.map": "/zhenil/static/js/787.0bd6f522.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.c1ee9828.js"
+    "static/js/main.977dc20f.js"
   ]
 }
