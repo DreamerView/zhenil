@@ -1,34 +1,52 @@
-const CACHE_NAME = "version-4";
-const urlsToCache = ['style.css', 'offline.html'];
+const OFFLINE_VERSION = 1;
+const CACHE_NAME = "offline";
+const OFFLINE_URL = "offline.html";
 
-const self = this;
-
-self.addEventListener('install', async(event) => {
-   const cache = await caches.open(CACHE_NAME);
-   await cache.addAll(urlsToCache);
+self.addEventListener("install", (event) => {
+  event.waitUntil(
+    (async () => {
+      const cache = await caches.open(CACHE_NAME);
+      await cache.add(new Request(OFFLINE_URL, { cache: "reload" }));
+    })()
+  );
+  self.skipWaiting();
 });
 
-// self.addEventListener('fetch', (event) => {
-//     event.respondWith(
-//         caches.match(event.request)
-//             .then(() => {
-//                 return fetch(event.request) 
-//                     .catch(() => caches.match('offline.html'))
-//             })
-//     )
-//     console.log('Fetched', event.request.url)
-// });
-self.addEventListener('activate', async(event)=>{
-    const cacheNames = await caches.keys()
-    await Promise.all(
-        cacheNames.filter(name => name !== CACHE_NAME).map(name=> caches.delete(name))
-    )
-});
-self.addEventListener('fetch', (event) => {
-        event.respondWith(cacheFirst(event.request));
-});
-async function cacheFirst(req) {
-    const cached = await caches.match(req)
-    return cached ?? await fetch(req).catch(()=>caches.match('offline.html'))
-}
+self.addEventListener("activate", (event) => {
+  event.waitUntil(
+    (async () => {
 
+      if ("navigationPreload" in self.registration) {
+        await self.registration.navigationPreload.enable();
+      }
+    })()
+  );
+
+  self.clients.claim();
+});
+
+self.addEventListener("fetch", (event) => {
+
+  if (event.request.mode === "navigate") {
+    event.respondWith(
+      (async () => {
+        try {
+
+          const preloadResponse = await event.preloadResponse;
+          if (preloadResponse) {
+            return preloadResponse;
+          }
+
+          const networkResponse = await fetch(event.request);
+          return networkResponse;
+        } catch (error) {
+
+          const cache = await caches.open(CACHE_NAME);
+          const cachedResponse = await cache.match(OFFLINE_URL);
+          return cachedResponse;
+        }
+      })()
+    );
+  }
+
+});

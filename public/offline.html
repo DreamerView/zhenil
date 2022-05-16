@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="data:image/x-icon;base64,AAABAAEAICAAAAEAIAAFBAAAFgAAAIlQTkcNChoKAAAADUlIRFIAAAAgAAAAIAgDAAAARKSKxgAAAAFzUkdCAdnJLH8AAAAJcEhZcwAACxMAAAsTAQCanBgAAAGzUExURQAAAKCX3YZ804J20oF10X900YB10YJ20oR5052U3MvF756U4ZuQ4JqP4JmO4JiO35qP4JqQ4J6T4amg5Id804F10X1x0H1x0IB00Yd81J+V4pmP4JeM35mO4J2T4YN4035y0IV605yS4ZiN35eM35uQ4Ip/1X5z0Xxw0I6C3KCV4ZeO2YB10Xtv0HJk0XVm04+D3JmO4KCW4od81H1x0HBh0ZyS4YF20ZaL35qP4IB10Xls0Ih72piN34F10XFj0XJk0oF20Xtu0HNk0oyA24B00Xxw0HNl0XVn05GG3ZiN34F10XVn0Xxu1ZqP4IR50npu0HFi0Yx/25uQ4JWL2X9z0XZp0X5x1qCW44Z71H5y0Hdp1JSJ3p2S4YF20ZKG3ZqP4IV50n9z0H1x0HRm05eM35iN352T4IB00XZn05OI3piN352S4IZ603ps1ZaL35mO4Hls0IZ52ZiN34Z71H5y0nNl0XVn04+D3JmP4IZ81Hhr0nFi0XFi0X1v1piN4H9y1HRm0nRl0n5w1oh82HZo03Fi0XZo04R32MvG7Htu1HZo03Jj0XJj0XZn03tt1ZmO37Pu4nkAAACRdFJOUwACPZnV8NWaWAQBSo/O7vDao0kFPbb9/9o9K8r/xlBb+15C8/53Kfr88kcDuf/////UCkX+/2Wi/8Pf///5/P///////+z//////7n//9tm////hwnj//8ZSv7//2lp/4kLnvP/+LcTbv//hhMF//gJ8/iFBW7z+IUJBW7z+IUJC561EgmI/J8RATmU7vOiSAJEh2d8AAABTklEQVR4nMWTZVcCQRRAn4HdtcaqKHaANbZigoGB3YiIriJ2K3b3T3Znc3bgs95vc+49Z86Z9wbgbwgKDgnV6cLCIyLxKSo6JjYuPiExKVn2KalpjEh6BkBmFiuRnSP6XD2joM/LN7AKBYXYFxUzBCWlLEkZQHkF6SuNpioyqK6B2jqNR0hb1EMD5XHRqAZN0Kz6FsHzRatatEG76s1IooMooFP2XYpHqLtHDXolb7Eigr5+yQ/AoBTYkIYh6ZJhGBH9qF0b2MfEYBwmJoVgClFMC94wAzA7hwMrHcwv4GARD2OJf0uLkQ5MDt4vC9N0rrgCBKsO1r22Ls7bybn8r9jYdHu25I3xci4bHWzveHbVnfNye3Swf0B4gMOjY60/OT3T7u35xSXpfVfX9Gbf3JLB3b3/7j88+mT99PwS6He8vr1/YP359f0T+P/8F792RntzmBv7PgAAAABJRU5ErkJggg==" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Network</title>
+    <title>No internet connection</title>
     <meta name="theme-color" content="hsl(0, 0%, 100%)" media="(prefers-color-scheme: light)"/>
     <meta name="theme-color" content="hsl(240, 3%, 11%)" media="(prefers-color-scheme: dark)"/>
     <meta name="theme-color" content="hsl(0, 0%, 100%)" />
@@ -126,7 +126,7 @@
         window.addEventListener('online',()=>{
             document.querySelector('span').setAttribute('class','green');
             document.querySelector('span').textContent="online";
-            document.querySelector('p').textContent="Congratulations! You are online! After 2 seconds we will update the page";
+            document.querySelector('p').textContent="Congratulations! After 2 seconds we will update the page";
             setTimeout(()=>{
                 window.location.reload();
             },2000);
