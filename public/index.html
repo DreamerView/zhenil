@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script>
+        window.addEventListener("load", () => {
+          if ("serviceWorker" in navigator) {
+              navigator.serviceWorker.register('%PUBLIC_URL%/serviceworker.js')
+                      .then((reg) => console.log('Success: ', reg.scope))
+                      .catch((err) => console.log('Failure: ', err));
+          }
+        });
+    </script>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta http-equiv="Cache-Control" content="max-age=31536000" />
@@ -25,14 +34,5 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <script>
-      window.addEventListener("load", () => {
-        if ("serviceWorker" in navigator) {
-            navigator.serviceWorker.register('%PUBLIC_URL%/serviceworker.js')
-                    .then((reg) => console.log('Success: ', reg.scope))
-                    .catch((err) => console.log('Failure: ', err));
-        }
-      });
-  </script>
   </body>
 </html>
