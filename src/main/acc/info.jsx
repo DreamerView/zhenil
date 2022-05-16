@@ -86,8 +86,10 @@ const InfoAcc = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="main__block_interface_menu_c_end flex">
-                        <Link to="/size" className="main__block_interface_btn_back_red">Удалить пользователя</Link>
+                    <div className="main__block_interface_menu_c_end">
+                        <div className=''>
+                            <span className='logo'>* Выберите файл и загрузите ваш логотип пожалуйста</span>
+                        </div>
                     </div>
                 </div>
             </div>
