@@ -1,41 +1,34 @@
-const CACHE_NAME = "version-2";
+const CACHE_NAME = "version-4";
 const urlsToCache = ['style.css', 'offline.html'];
 
 const self = this;
 
-self.addEventListener('install', (event) => {
-    event.waitUntil(
-        caches.open(CACHE_NAME)
-            .then((cache) => {
-                console.log('Opened cache');
-
-                return cache.addAll(urlsToCache);
-            })
-    )
+self.addEventListener('install', async(event) => {
+   const cache = await caches.open(CACHE_NAME);
+   await cache.addAll(urlsToCache);
 });
 
+// self.addEventListener('fetch', (event) => {
+//     event.respondWith(
+//         caches.match(event.request)
+//             .then(() => {
+//                 return fetch(event.request) 
+//                     .catch(() => caches.match('offline.html'))
+//             })
+//     )
+//     console.log('Fetched', event.request.url)
+// });
+self.addEventListener('activate', async(event)=>{
+    const cacheNames = await caches.keys()
+    await Promise.all(
+        cacheNames.filter(name => name !== CACHE_NAME).map(name=> caches.delete(name))
+    )
+});
 self.addEventListener('fetch', (event) => {
-    event.respondWith(
-        caches.match(event.request)
-            .then(() => {
-                return fetch(event.request) 
-                    .catch(() => caches.match('offline.html'))
-            })
-    )
+        event.respondWith(cacheFirst(event.request));
 });
+async function cacheFirst(req) {
+    const cached = await caches.match(req)
+    return cached ?? await fetch(req).catch((e)=>caches.match('offline.html'))
+}
 
-self.addEventListener('activate', (event) => {
-    const cacheWhitelist = [];
-    cacheWhitelist.push(CACHE_NAME);
-
-    event.waitUntil(
-        caches.keys().then((cacheNames) => Promise.all(
-            cacheNames.map((cacheName) => {
-                if(!cacheWhitelist.includes(cacheName)) {
-                    return caches.delete(cacheName);
-                }
-            })
-        ))
-            
-    )
-});
